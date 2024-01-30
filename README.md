@@ -1,5 +1,3 @@
-Your game concept is intriguing and has great potential for both engaging gameplay and interesting narrative elements. Here's a more fleshed-out version of your idea for a game design pitch:
-
 ### Game Title: "Spark's Journey"
 
 ### Game Genre: 2D Platformer with Puzzle Elements
