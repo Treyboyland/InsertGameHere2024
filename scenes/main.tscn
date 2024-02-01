@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://cr2isi28y6ts3"]
+[gd_scene load_steps=6 format=3 uid="uid://cr2isi28y6ts3"]
 
+[ext_resource type="PackedScene" uid="uid://c381g8diwgkjs" path="res://scenes/checker.tscn" id="1_ap7x2"]
 [ext_resource type="PackedScene" uid="uid://b8keknrg3sge3" path="res://Player/player.tscn" id="1_fwr2m"]
 [ext_resource type="PackedScene" uid="uid://tm4rlavwwx0x" path="res://scenes/Tile01.tscn" id="2_4b21i"]
 
@@ -10,6 +11,10 @@ scenes/1/scene = ExtResource("2_4b21i")
 sources/0 = SubResource("TileSetScenesCollectionSource_gnsbi")
 
 [node name="Node2D" type="Node2D"]
+
+[node name="Checker" parent="." instance=ExtResource("1_ap7x2")]
+position = Vector2(-614, -1021)
+square_size = 32
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = -1

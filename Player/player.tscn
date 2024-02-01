@@ -32,3 +32,13 @@ move_stats = ExtResource("3_p7ik5")
 shape = SubResource("RectangleShape2D_t6u5f")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+limit_smoothed = true
+position_smoothing_enabled = true
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+drag_left_margin = 0.4
+drag_top_margin = 0.8
+drag_right_margin = 0.4
+drag_bottom_margin = 0.7
+editor_draw_limits = true
+editor_draw_drag_margin = true
