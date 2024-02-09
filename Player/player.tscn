@@ -47,12 +47,12 @@ editor_draw_drag_margin = true
 
 [node name="SampleGong" type="AkEvent2D" parent="Wwise Sound Events"]
 event = {
-"id": 2260221316,
-"name": "PlayTestSound"
+"id": 1847609664,
+"name": "PlaceHolderBeep"
 }
 
 [node name="PlayerLands" type="AkEvent2D" parent="Wwise Sound Events"]
 event = {
-"id": 2260221316,
-"name": "PlayTestSound"
+"id": 1847609664,
+"name": "PlaceHolderBeep"
 }

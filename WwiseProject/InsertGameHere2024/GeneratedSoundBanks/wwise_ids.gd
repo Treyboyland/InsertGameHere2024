@@ -3,9 +3,11 @@ class_name AK
 class EVENTS:
 
 	const PLAYTESTSOUND = 2260221316
+	const PLACEHOLDERBEEP = 1847609664
 
 	const _dict = {
-		"PlayTestSound": PLAYTESTSOUND
+		"PlayTestSound": PLAYTESTSOUND,
+		"PlaceHolderBeep": PLACEHOLDERBEEP
 	}
 
 class STATES:
@@ -27,11 +29,11 @@ class TRIGGERS:
 class BANKS:
 
 	const INIT = 1355168291
-	const TESTBANK = 3291379323
+	const ALLINONE = 2858921253
 
 	const _dict = {
 		"Init": INIT,
-		"TestBank": TESTBANK
+		"Allinone": ALLINONE
 	}
 
 class BUSSES:
@@ -48,12 +50,12 @@ class AUX_BUSSES:
 
 class AUDIO_DEVICES:
 
-	const NO_OUTPUT = 2317455096
 	const SYSTEM = 3859886410
+	const NO_OUTPUT = 2317455096
 
 	const _dict = {
-		"No_Output": NO_OUTPUT,
-		"System": SYSTEM
+		"System": SYSTEM,
+		"No_Output": NO_OUTPUT
 	}
 
 class EXTERNAL_SOURCES:

@@ -9,26 +9,17 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F59F4DC8-104C-C1DE-400A-419727C753E9}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{80AA3125-B4C7-2DBE-1BF1-31EE7B72A930}">
 			<ShortName>Init</ShortName>
 			<Path>1355168291.bnk</Path>
 			<Plugins>
-				<Custom>
-					<Plugin Id="12126557" Name="RoomVerb (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
-				</Custom>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
 				</AudioDevices>
 			</Plugins>
 			<Busses>
-				<Bus Id="3803692087" Name="Master Audio Bus">
-					<PluginRefs>
-						<Custom>
-							<PluginRef Id="12126557"/>
-						</Custom>
-					</PluginRefs>
-				</Bus>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 			<AcousticTextures>
 				<AcousticTexture Id="504532776" Name="Brick">
@@ -159,16 +150,25 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3291379323" Type="User" Language="SFX" Hash="{E0A3B6AD-636F-93D9-DC2B-659F3A47CD59}">
-			<ShortName>TestBank</ShortName>
-			<Path>3291379323.bnk</Path>
+		<SoundBank Id="2858921253" Type="User" Language="SFX" Hash="{AFC3DD32-6C71-DAAC-EE92-8E205C96BA34}">
+			<ShortName>Allinone</ShortName>
+			<Path>2858921253.bnk</Path>
 			<Media>
+				<File Id="193780630" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BeepSqareC3.wav</ShortName>
+					<CachePath>SFX/BeepSqareC3_818F3B66.wem</CachePath>
+				</File>
 				<File Id="494851817" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Weird Techy Sound.wav</ShortName>
 					<CachePath>SFX/Weird Techy Sound_818F3B66.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
+				<Event Id="1847609664" Name="PlaceHolderBeep">
+					<MediaRefs>
+						<MediaRef Id="193780630"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2260221316" Name="PlayTestSound">
 					<MediaRefs>
 						<MediaRef Id="494851817"/>
@@ -177,5 +177,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E8C15BBC-4CB9-1777-783C-10B718BBABF1}</FileHash>
+	<FileHash>{30722D89-9D6E-6C11-0F32-929C40F80662}</FileHash>
 </SoundBanksInfo>

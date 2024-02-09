@@ -41,8 +41,8 @@ layer_0/tile_data = PackedInt32Array(1376278, 0, 65536, 1376279, 0, 65536, 17694
 
 [node name="AkBank2" type="AkBank" parent="."]
 bank = {
-"id": 3291379323,
-"name": "TestBank"
+"id": 2858921253,
+"name": "Allinone"
 }
 load_on = 1
 
