@@ -50,3 +50,9 @@ event = {
 "id": 2260221316,
 "name": "PlayTestSound"
 }
+
+[node name="PlayerLands" type="AkEvent2D" parent="Wwise Sound Events"]
+event = {
+"id": 2260221316,
+"name": "PlayTestSound"
+}
