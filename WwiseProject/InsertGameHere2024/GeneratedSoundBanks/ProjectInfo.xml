@@ -3,10 +3,11 @@
 	<Project Name="InsertGameHere2024" GUID="{B57BDBD9-59C7-4879-8F92-B831BF32FEBF}" Generator="2023.1.0.8367"/>
 	<CacheRoot>../.cache</CacheRoot>
 	<Platforms>
+		<Platform Name="Mac" GUID="{B291919D-59A1-4706-B201-FCE191C00FBE}" BasePlatform="Mac" BasePlatformGUID="{9C6217D5-DD11-4795-87C1-6CE02853C540}" Path="Mac"/>
 		<Platform Name="Windows" GUID="{2312E630-B2DD-46E8-826C-068D384F669F}" BasePlatform="Windows" BasePlatformGUID="{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}" Path="Windows"/>
 	</Platforms>
 	<Languages>
 		<Language Name="English(US)" Id="684519430" GUID="{0CA14FE7-1EEC-4A30-A55F-0CC6CB0910CF}" Default="true" UseAsStandIn="true"/>
 	</Languages>
-	<FileHash>{7A59CF46-DEBD-C420-3777-73884A6CA298}</FileHash>
+	<FileHash>{561F4203-00A2-BD6D-E786-15C71B984B8B}</FileHash>
 </ProjectInfo>

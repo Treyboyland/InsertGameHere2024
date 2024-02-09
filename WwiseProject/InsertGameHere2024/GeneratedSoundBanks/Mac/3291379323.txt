@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2260221316	PlayTestSound			\Default Work Unit\PlayTestSound	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	494851817	SFXTester	F:\GodotProjects\InsertGameHere2024\WwiseProject\InsertGameHere2024\.cache\Mac\SFX\Weird Techy Sound_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test\SFXTester		447960
+

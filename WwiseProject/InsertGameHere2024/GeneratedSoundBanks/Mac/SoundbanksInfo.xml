@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="150">
 	<RootPaths>
 		<ProjectRoot>../..</ProjectRoot>
-		<SourceFilesRoot>../../.cache/Windows</SourceFilesRoot>
+		<SourceFilesRoot>../../.cache/Mac</SourceFilesRoot>
 		<SoundBanksRoot>.</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
 		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F59F4DC8-104C-C1DE-400A-419727C753E9}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{166BAE7A-229A-311B-07F8-66E6E08E0EB4}">
 			<ShortName>Init</ShortName>
 			<Path>1355168291.bnk</Path>
 			<Plugins>
@@ -177,5 +177,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E8C15BBC-4CB9-1777-783C-10B718BBABF1}</FileHash>
+	<FileHash>{BF5AC6C6-15CF-A428-709D-69D4B3AA3DAC}</FileHash>
 </SoundBanksInfo>
