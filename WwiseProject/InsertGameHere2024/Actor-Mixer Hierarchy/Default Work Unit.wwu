@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1D0C3F0F-3550-4061-A462-32D35674C148}" SchemaVersion="119">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{1D0C3F0F-3550-4061-A462-32D35674C148}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Test" ID="{75A590EC-F342-4AB2-B656-D4BD552E8B96}" ShortID="153759693">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72A2E9F5-390E-4F2F-8B2F-533E5E63D3B0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{87F58A71-6DB3-4AD1-BD93-A282A2303D9F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="SFXTester" ID="{26C8B170-FC28-48E8-9F26-04138543643E}" ShortID="434250095">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72A2E9F5-390E-4F2F-8B2F-533E5E63D3B0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{87F58A71-6DB3-4AD1-BD93-A282A2303D9F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Weird Techy Sound" ID="{6DC8B32E-876C-4602-9E1C-71DD8B2F56CC}">
+									<Language>SFX</Language>
+									<AudioFile>Weird Techy Sound.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="494851817"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Weird Techy Sound" ID="{6DC8B32E-876C-4602-9E1C-71DD8B2F56CC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

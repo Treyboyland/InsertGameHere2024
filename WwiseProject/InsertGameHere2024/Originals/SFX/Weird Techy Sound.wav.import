@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://1riw15ihcf6s"
+path="res://.godot/imported/Weird Techy Sound.wav-30da366205c31bacf0d40fea241216a4.sample"
+
+[deps]
+
+source_file="res://WwiseProject/InsertGameHere2024/Originals/SFX/Weird Techy Sound.wav"
+dest_files=["res://.godot/imported/Weird Techy Sound.wav-30da366205c31bacf0d40fea241216a4.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
