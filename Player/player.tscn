@@ -42,3 +42,11 @@ drag_right_margin = 0.4
 drag_bottom_margin = 0.7
 editor_draw_limits = true
 editor_draw_drag_margin = true
+
+[node name="Wwise Sound Events" type="Node2D" parent="."]
+
+[node name="SampleGong" type="AkEvent2D" parent="Wwise Sound Events"]
+event = {
+"id": 2260221316,
+"name": "PlayTestSound"
+}
