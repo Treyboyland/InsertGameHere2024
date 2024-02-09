@@ -2,6 +2,8 @@
 
 ### Game Genre: 2D Platformer with Puzzle Elements
 
+### Tools: Godot 4.2 stable, WWise 2023.1.0
+
 ### Concept Overview:
 "Spark's Journey" is a unique 2D platformer where players control a sentient robotic entity named Spark. Trapped in a sprawling, mechanized factory, Spark possesses the unique ability to transfer its consciousness between different robotic bodies. Each body has its own capabilities and limitations. The game's primary objective is to navigate through the factory, solve puzzles, and ultimately gain freedom.
 
