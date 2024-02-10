@@ -4,6 +4,9 @@
 		<WorkUnit Name="Default Work Unit" ID="{1D0C3F0F-3550-4061-A462-32D35674C148}" PersistMode="Standalone">
 			<ChildrenList>
 				<ActorMixer Name="SFX" ID="{0DBD38F9-A291-4A9E-AF2D-7293812C9F2F}" ShortID="239036472">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72A2E9F5-390E-4F2F-8B2F-533E5E63D3B0}"/>
@@ -77,6 +80,9 @@
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{73065796-94F5-4F80-8EAC-7186B3DB7F6A}"/>
+					</PositioningInfo>
 				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
