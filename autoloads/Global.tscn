@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://dq4jgq4itenme"]
+
+[ext_resource type="Script" path="res://autoloads/Global.gd" id="1_xoo3h"]
+
+[node name="Global" type="Node2D"]
+script = ExtResource("1_xoo3h")
+
+[node name="AkBank2" type="AkBank" parent="."]
+bank = {
+"id": 2858921253,
+"name": "Allinone"
+}
+load_on = 1

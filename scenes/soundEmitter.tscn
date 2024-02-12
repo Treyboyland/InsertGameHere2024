@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://b61daowwyfm6o"]
+
+[ext_resource type="Script" path="res://sampleSound.gd" id="1_ts6hc"]
+
+[node name="soundEmitter" type="Node2D"]
+script = ExtResource("1_ts6hc")
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2(-12.2462, -13.0711)
+rotation = 0.94511
+scale = Vector2(4.19489, 4.19489)
+
+[node name="Polygon2D" type="Polygon2D" parent="Node2D"]
+position = Vector2(-3.73581, -2.75254)
+polygon = PackedVector2Array(-9, 8, -10, 1, -7, -9, 1, -14, 11.0348, -15.4901, 9.91108, -11.5102, 2.5132, -10.5738, -4, -7, -7, 1, -6, 7)
+
+[node name="Polygon2D2" type="Polygon2D" parent="Node2D"]
+position = Vector2(-1.38237, -1.92646)
+scale = Vector2(0.659432, 0.639218)
+polygon = PackedVector2Array(-9, 8, -10, 1, -7, -9, 1, -14, 11.0348, -15.4901, 9.91108, -11.5102, 2.5132, -10.5738, -4, -7, -7, 1, -6, 7)
+
+[node name="Polygon2D3" type="Polygon2D" parent="Node2D"]
+position = Vector2(0.21961, -1.36669)
+scale = Vector2(0.323316, 0.376106)
+polygon = PackedVector2Array(-9, 8, -10, 1, -7, -9, 1, -14, 11.0348, -15.4901, 9.91108, -11.5102, 2.5132, -10.5738, -4, -7, -7, 1, -6, 7)
+
+[node name="Polygon2D4" type="Polygon2D" parent="Node2D"]
+position = Vector2(0.0588803, 0.241744)
+polygon = PackedVector2Array(1.3715, -1.98916, 2.23182, -2.77579, 3.70267, -3.0526, 4.97213, -2.59907, 5.62897, -1.67797, 5.54968, -0.18963, 4.79398, 0.998892, 3.24656, 1.6669, 1.70122, 1.3575, 1.01678, 0.450813, 0.882874, -0.813748)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 4.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

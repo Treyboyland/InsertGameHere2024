@@ -43,13 +43,10 @@ drag_bottom_margin = 0.7
 editor_draw_limits = true
 editor_draw_drag_margin = true
 
-[node name="Wwise Sound Events" type="Node2D" parent="."]
+[node name="AkListener2D" type="AkListener2D" parent="Camera2D"]
+position = Vector2(0, -1)
 
-[node name="SampleGong" type="AkEvent2D" parent="Wwise Sound Events"]
-event = {
-"id": 1847609664,
-"name": "PlaceHolderBeep"
-}
+[node name="Wwise Sound Events" type="Node2D" parent="."]
 
 [node name="PlayerLands" type="AkEvent2D" parent="Wwise Sound Events"]
 event = {
