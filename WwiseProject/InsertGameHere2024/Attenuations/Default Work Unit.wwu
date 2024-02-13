@@ -4,6 +4,9 @@
 		<WorkUnit Name="Default Work Unit" ID="{5F9F630D-F0D3-4883-809D-52827EF2B289}" PersistMode="Standalone">
 			<ChildrenList>
 				<Attenuation Name="VolumeForDistance" ID="{115B85F1-E440-4258-A31D-A52023350181}" ShortID="480010703">
+					<PropertyList>
+						<Property Name="RadiusMax" Type="Real64" Value="5000"/>
+					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
@@ -16,9 +19,10 @@
 											<XPos>0</XPos>
 											<YPos>0</YPos>
 											<Flags>5</Flags>
+											<SegmentShape>Exp3</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>100</XPos>
+											<XPos>5000</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -33,7 +37,25 @@
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
 						</VolumeWetUserUsage>
 						<LowPassFilterUsage>
-							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+							<CurveUsageInfo Platform="Linked" CurveToUse="None">
+								<Curve Name="LowPassFilter" ID="{1696C82A-A45E-42C8-B5A7-04937FB4C9EE}">
+									<PropertyList>
+										<Property Name="Flags" Type="int32" Value="65537"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>0</YPos>
+											<Flags>5</Flags>
+										</Point>
+										<Point>
+											<XPos>5000</XPos>
+											<YPos>100</YPos>
+											<Flags>37</Flags>
+										</Point>
+									</PointList>
+								</Curve>
+							</CurveUsageInfo>
 						</LowPassFilterUsage>
 						<HighPassFilterUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>

@@ -150,7 +150,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="2858921253" Type="User" Language="SFX" Hash="{13C8B582-FC91-38CC-5399-D0B5E85DE87F}">
+		<SoundBank Id="2858921253" Type="User" Language="SFX" Hash="{DE78AF81-41E9-6CEB-F1C8-8C511A7A80AE}">
 			<ShortName>Allinone</ShortName>
 			<Path>2858921253.bnk</Path>
 			<Media>
@@ -177,5 +177,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{3C592B82-D3AE-034E-C1B5-EA66B9523AD5}</FileHash>
+	<FileHash>{FE873284-EAE3-C3AD-550C-7C2B3B48536B}</FileHash>
 </SoundBanksInfo>
