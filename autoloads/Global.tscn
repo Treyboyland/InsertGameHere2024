@@ -1,9 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://dq4jgq4itenme"]
+[gd_scene load_steps=3 format=3 uid="uid://dq4jgq4itenme"]
 
 [ext_resource type="Script" path="res://autoloads/Global.gd" id="1_xoo3h"]
 
+[sub_resource type="Curve" id="Curve_brqwk"]
+min_value = 200.0
+max_value = 400.0
+_data = [Vector2(0, 200), 0.0, 0.0, 0, 0, Vector2(1, 400), 280.0, 0.0, 0, 0]
+point_count = 2
+
 [node name="Global" type="Node2D"]
 script = ExtResource("1_xoo3h")
+falloff_curve = SubResource("Curve_brqwk")
 
 [node name="AkBank2" type="AkBank" parent="."]
 bank = {
