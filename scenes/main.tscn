@@ -45,9 +45,9 @@ layer_0/tile_data = PackedInt32Array(1376278, 0, 65536, 1376279, 0, 65536, 17694
 [node name="soundEmitter" parent="." node_paths=PackedStringArray("event_node") instance=ExtResource("4_vu2nq")]
 position = Vector2(579, 260)
 delay_between_sounds = 10.0
-event_node = NodePath("gong")
+event_node = NodePath("Gong3d")
 
-[node name="gong" type="AkEvent2D" parent="soundEmitter"]
+[node name="Gong3d" type="AkEvent3D" parent="soundEmitter"]
 event = {
 "id": 2260221316,
 "name": "PlayTestSound"
@@ -58,7 +58,7 @@ position = Vector2(2067, 630)
 delay_between_sounds = 1.0
 event_node = NodePath("beep")
 
-[node name="beep" type="AkEvent2D" parent="soundEmitter2"]
+[node name="beep" type="AkEvent3D" parent="soundEmitter2"]
 event = {
 "id": 1847609664,
 "name": "PlaceHolderBeep"
@@ -79,3 +79,5 @@ drag_right_margin = 0.4
 drag_bottom_margin = 0.7
 editor_draw_limits = true
 editor_draw_drag_margin = true
+
+[node name="AkListener3D" type="AkListener3D" parent="."]
