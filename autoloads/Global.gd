@@ -15,12 +15,12 @@ func calculate_z_position(objectX):
 	var viewportCenterX = viewportWidth / 2  # Calculate center X of the viewport
 	var maxDistanceFromCenter = viewportCenterX * 1.5
 	var distanceFromCenter = min( abs(objectX - viewportCenterX), maxDistanceFromCenter)  # Distance of the object from the viewport's center
-	var maxZ = viewportWidth / 2  # Maximum Z position at the center of the viewport
-
+	#var maxZ = viewportWidth / 2  # Maximum Z position at the center of the viewport
+	var maxZ = 100
 	# Normalize the distance to a range of 0 to 1, where 0 is center and 1 is at the edge
 	var normalizedDistance = distanceFromCenter / viewportCenterX
 
 	# Calculate Z position as the inverse of the normalized distance, so it's max at center and 0 at edges
-	var zPosition = (1 - normalizedDistance) * maxZ
+	var zPosition = normalizedDistance * maxZ
 
 	return zPosition

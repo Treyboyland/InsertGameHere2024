@@ -1,5 +1,4 @@
 extends Node2D
-@onready var sample_gong = $SampleSound
 @onready var timer = $Timer
 @export var delay_between_sounds:float = 4.0
 @export var event_node:AkEvent3D = null
