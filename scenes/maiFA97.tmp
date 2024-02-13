@@ -2,8 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://c381g8diwgkjs" path="res://scenes/checker.tscn" id="1_ap7x2"]
 [ext_resource type="PackedScene" uid="uid://b8keknrg3sge3" path="res://Player/player.tscn" id="1_fwr2m"]
-[ext_resource type="Script" path="res://scenes/main.gd" id="1_vogl7"]
 [ext_resource type="PackedScene" uid="uid://tm4rlavwwx0x" path="res://scenes/Tile01.tscn" id="2_4b21i"]
+[ext_resource type="Script" path="res://scenes/followCamera.gd" id="3_kp0nf"]
 [ext_resource type="PackedScene" uid="uid://b61daowwyfm6o" path="res://scenes/soundEmitter.tscn" id="4_vu2nq"]
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_gnsbi"]
@@ -12,11 +12,7 @@ scenes/1/scene = ExtResource("2_4b21i")
 [sub_resource type="TileSet" id="TileSet_7ilun"]
 sources/0 = SubResource("TileSetScenesCollectionSource_gnsbi")
 
-[node name="Main" type="Node2D"]
-script = ExtResource("1_vogl7")
-
-[node name="AkListener2D" type="AkListener2D" parent="."]
-position = Vector2(124, 59)
+[node name="Node2D" type="Node2D"]
 
 [node name="Checker" parent="." instance=ExtResource("1_ap7x2")]
 position = Vector2(-614, -1021)
@@ -36,6 +32,26 @@ color = Color(0.154876, 0.154876, 0.154876, 1)
 position = Vector2(61, -67)
 color = Color(0.341176, 0.341176, 0.341176, 1)
 polygon = PackedVector2Array(397, 128, 466, 273, 540, 128)
+
+[node name="Player" parent="." instance=ExtResource("1_fwr2m")]
+position = Vector2(242, 145)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(-242, -145)
+limit_smoothed = true
+position_smoothing_enabled = true
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+drag_left_margin = 0.4
+drag_top_margin = 0.8
+drag_right_margin = 0.4
+drag_bottom_margin = 0.7
+editor_draw_limits = true
+editor_draw_drag_margin = true
+script = ExtResource("3_kp0nf")
+
+[node name="AkListener2D" type="AkListener2D" parent="Player/Camera2D"]
+position = Vector2(0, -1)
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_7ilun")
@@ -63,19 +79,3 @@ event = {
 "id": 1847609664,
 "name": "PlaceHolderBeep"
 }
-
-[node name="Player" parent="." instance=ExtResource("1_fwr2m")]
-position = Vector2(128, 56)
-
-[node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(-4, 4)
-limit_smoothed = true
-position_smoothing_enabled = true
-drag_horizontal_enabled = true
-drag_vertical_enabled = true
-drag_left_margin = 0.4
-drag_top_margin = 0.8
-drag_right_margin = 0.4
-drag_bottom_margin = 0.7
-editor_draw_limits = true
-editor_draw_drag_margin = true
