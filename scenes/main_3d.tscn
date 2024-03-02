@@ -42,7 +42,7 @@ camera_attributes = SubResource("CameraAttributesPractical_diy8t")
 [node name="env blocks" type="Node3D" parent="."]
 
 [node name="CSGMesh3D2" type="CSGMesh3D" parent="env blocks"]
-transform = Transform3D(104.27, 0, 0, 0, 1, 0, 0, 0, 122.598, -0.00839424, 0, -1.94747)
+transform = Transform3D(908.333, 0, 0, 0, 1, 0, 0, 0, 480.94, -0.00839424, 0, -1.94747)
 use_collision = true
 mesh = SubResource("BoxMesh_p145e")
 
