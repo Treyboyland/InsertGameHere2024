@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{5263B37A-45E1-4243-A77E-918CC7E234CF}" SchemaVersion="119">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{5263B37A-45E1-4243-A77E-918CC7E234CF}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{5263B37A-45E1-4243-A77E-918CC7E234CF}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Panning" ID="{4BE52FB2-13A1-4BF5-A6BB-C594C0506F60}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="2"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="180"/>
+						<Property Name="Min" Type="Real64" Value="-180"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Dummy" ID="{0C989647-0277-435E-B197-43855C874135}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

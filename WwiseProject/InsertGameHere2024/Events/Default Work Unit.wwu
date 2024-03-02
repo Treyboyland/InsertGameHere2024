@@ -25,6 +25,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Strums" ID="{60FD039A-CB9B-4B45-8EF8-89393D760D8E}">
+					<ChildrenList>
+						<Action Name="" ID="{CF68DDA5-56F4-4565-8A17-28D2830FA4DD}" ShortID="315918675">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Strums" ID="{C86413A3-8C83-4001-8F32-DC56EE67DB4F}" WorkUnitID="{1D0C3F0F-3550-4061-A462-32D35674C148}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="FilterSweepLoop" ID="{C1F4802A-53F8-46F7-AD2D-0D84E8EDD283}">
+					<ChildrenList>
+						<Action Name="" ID="{60D936D0-20D0-4D11-A2FD-23BDB9C90477}" ShortID="720463444">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FilterSweepMono" ID="{DAEF6624-127B-49EC-8F4B-AA5B0BE3EF73}" WorkUnitID="{1D0C3F0F-3550-4061-A462-32D35674C148}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

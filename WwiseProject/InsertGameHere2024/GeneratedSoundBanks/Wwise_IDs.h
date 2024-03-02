@@ -13,9 +13,17 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID FILTERSWEEPLOOP = 889841071U;
         static const AkUniqueID PLACEHOLDERBEEP = 1847609664U;
         static const AkUniqueID PLAYTESTSOUND = 2260221316U;
+        static const AkUniqueID STRUMS = 3473747615U;
     } // namespace EVENTS
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID DUMMY = 4079084883U;
+        static const AkUniqueID PANNING = 1820302072U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {

@@ -6,6 +6,7 @@
 				<ActorMixer Name="SFX" ID="{0DBD38F9-A291-4A9E-AF2D-7293812C9F2F}" ShortID="239036472">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -80,12 +81,214 @@
 										<ActiveSource Name="BeepSqareC3" ID="{D55444F8-6AB9-4DD4-BC4B-17095D5A3A7A}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<RandomSequenceContainer Name="Strums" ID="{C86413A3-8C83-4001-8F32-DC56EE67DB4F}" ShortID="168532840">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72A2E9F5-390E-4F2F-8B2F-533E5E63D3B0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{87F58A71-6DB3-4AD1-BD93-A282A2303D9F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Strum1Mono" ID="{498A6862-09BB-4020-A980-2D8ED70DE830}" ShortID="294158752">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72A2E9F5-390E-4F2F-8B2F-533E5E63D3B0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{87F58A71-6DB3-4AD1-BD93-A282A2303D9F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Strum1Mono" ID="{3B356F8B-0991-4258-A671-8BA6D13C80B2}">
+													<Language>SFX</Language>
+													<AudioFile>Strum1Mono.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="971092194"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Strum1Mono" ID="{3B356F8B-0991-4258-A671-8BA6D13C80B2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Strum2Mono" ID="{628AC5E8-5E80-414C-B220-D1318FC9FABB}" ShortID="863725722">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72A2E9F5-390E-4F2F-8B2F-533E5E63D3B0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{87F58A71-6DB3-4AD1-BD93-A282A2303D9F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Strum2Mono" ID="{2D81DBCA-77C4-4BE3-9F98-324893719300}">
+													<Language>SFX</Language>
+													<AudioFile>Strum2Mono.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="149323564"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Strum2Mono" ID="{2D81DBCA-77C4-4BE3-9F98-324893719300}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Strum3Mono" ID="{0F4620CD-9F30-449E-9BC2-D5E00467FC4C}" ShortID="414861583">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72A2E9F5-390E-4F2F-8B2F-533E5E63D3B0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{87F58A71-6DB3-4AD1-BD93-A282A2303D9F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Strum3Mono" ID="{4172DD65-B644-48F1-94E5-5B9921E5222A}">
+													<Language>SFX</Language>
+													<AudioFile>Strum3Mono.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="54259996"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Strum3Mono" ID="{4172DD65-B644-48F1-94E5-5B9921E5222A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Strum4Mono" ID="{D0D83EE8-1561-4048-919E-ED2CF578A8B5}" ShortID="421813262">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72A2E9F5-390E-4F2F-8B2F-533E5E63D3B0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{87F58A71-6DB3-4AD1-BD93-A282A2303D9F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Strum4Mono" ID="{1E98EE3C-3200-40D7-8A53-1B7165779352}">
+													<Language>SFX</Language>
+													<AudioFile>Strum4Mono.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="875894189"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Strum4Mono" ID="{1E98EE3C-3200-40D7-8A53-1B7165779352}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Strum5Mono" ID="{9D7C01F7-368B-44DD-BD74-A1ABCAEE80F9}" ShortID="648573696">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72A2E9F5-390E-4F2F-8B2F-533E5E63D3B0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{87F58A71-6DB3-4AD1-BD93-A282A2303D9F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Strum5Mono" ID="{6EDBA5CF-AB90-41F4-811C-CE500DDEC673}">
+													<Language>SFX</Language>
+													<AudioFile>Strum5Mono.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="509926617"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Strum5Mono" ID="{6EDBA5CF-AB90-41F4-811C-CE500DDEC673}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="FilterSweepMono" ID="{DAEF6624-127B-49EC-8F4B-AA5B0BE3EF73}" ShortID="187597495">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72A2E9F5-390E-4F2F-8B2F-533E5E63D3B0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{87F58A71-6DB3-4AD1-BD93-A282A2303D9F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FilterSweepMono" ID="{B7AA91D6-9876-4F13-A301-77BBD49FEAC2}">
+											<Language>SFX</Language>
+											<AudioFile>FilterSweepMono.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="657504833"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FilterSweepMono" ID="{B7AA91D6-9876-4F13-A301-77BBD49FEAC2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
 					<PositioningInfo>
 						<Panner Name="" ID="{73065796-94F5-4F80-8EAC-7186B3DB7F6A}"/>
 					</PositioningInfo>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{93B007CB-89B9-4439-B95A-07E5D6086CB5}" ShortID="603726981">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="SpeakerPanning3DSpatializationMix"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="Panning" ID="{4BE52FB2-13A1-4BF5-A6BB-C594C0506F60}" WorkUnitID="{5263B37A-45E1-4243-A77E-918CC7E234CF}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{34F6E4E1-CCFC-4C67-AD62-14F80A0EED02}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>-180</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Log1</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>-90.10527</XPos>
+																<YPos>99</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Exp1</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>-0.21053</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Log1</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>90.73685</XPos>
+																<YPos>100</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Exp1</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>180</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
 				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>

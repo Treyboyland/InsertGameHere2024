@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{80AA3125-B4C7-2DBE-1BF1-31EE7B72A930}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{CDEAD2B1-AC2A-DB23-F6BC-5468E384020B}">
 			<ShortName>Init</ShortName>
 			<Path>1355168291.bnk</Path>
 			<Plugins>
@@ -21,6 +21,10 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<GameParameters>
+				<GameParameter Id="1820302072" Name="Panning"/>
+				<GameParameter Id="4079084883" Name="Dummy"/>
+			</GameParameters>
 			<AcousticTextures>
 				<AcousticTexture Id="504532776" Name="Brick">
 					<Properties>
@@ -150,10 +154,18 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="2858921253" Type="User" Language="SFX" Hash="{48AC869F-7C11-5077-6316-9C1D31552370}">
+		<SoundBank Id="2858921253" Type="User" Language="SFX" Hash="{24E05676-46A2-803B-6B0B-AB504234F381}">
 			<ShortName>Allinone</ShortName>
 			<Path>2858921253.bnk</Path>
 			<Media>
+				<File Id="54259996" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Strum3Mono.wav</ShortName>
+					<CachePath>SFX/Strum3Mono_818F3B66.wem</CachePath>
+				</File>
+				<File Id="149323564" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Strum2Mono.wav</ShortName>
+					<CachePath>SFX/Strum2Mono_818F3B66.wem</CachePath>
+				</File>
 				<File Id="193780630" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BeepSqareC3.wav</ShortName>
 					<CachePath>SFX/BeepSqareC3_818F3B66.wem</CachePath>
@@ -162,8 +174,29 @@
 					<ShortName>Weird Techy Sound.wav</ShortName>
 					<CachePath>SFX/Weird Techy Sound_818F3B66.wem</CachePath>
 				</File>
+				<File Id="509926617" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Strum5Mono.wav</ShortName>
+					<CachePath>SFX/Strum5Mono_818F3B66.wem</CachePath>
+				</File>
+				<File Id="657504833" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FilterSweepMono.wav</ShortName>
+					<CachePath>SFX/FilterSweepMono_818F3B66.wem</CachePath>
+				</File>
+				<File Id="875894189" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Strum4Mono.wav</ShortName>
+					<CachePath>SFX/Strum4Mono_818F3B66.wem</CachePath>
+				</File>
+				<File Id="971092194" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Strum1Mono.wav</ShortName>
+					<CachePath>SFX/Strum1Mono_818F3B66.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
+				<Event Id="889841071" Name="FilterSweepLoop">
+					<MediaRefs>
+						<MediaRef Id="657504833"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1847609664" Name="PlaceHolderBeep">
 					<MediaRefs>
 						<MediaRef Id="193780630"/>
@@ -174,8 +207,20 @@
 						<MediaRef Id="494851817"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3473747615" Name="Strums">
+					<MediaRefs>
+						<MediaRef Id="54259996"/>
+						<MediaRef Id="149323564"/>
+						<MediaRef Id="509926617"/>
+						<MediaRef Id="875894189"/>
+						<MediaRef Id="971092194"/>
+					</MediaRefs>
+				</Event>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="1820302072" Name="Panning"/>
+			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5B02E083-65B3-5D37-2CEB-5E0C3A708E5F}</FileHash>
+	<FileHash>{926EBAAA-EFC9-E086-366C-51AE390CDAAE}</FileHash>
 </SoundBanksInfo>

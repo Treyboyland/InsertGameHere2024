@@ -4,10 +4,14 @@ class EVENTS:
 
 	const PLAYTESTSOUND = 2260221316
 	const PLACEHOLDERBEEP = 1847609664
+	const STRUMS = 3473747615
+	const FILTERSWEEPLOOP = 889841071
 
 	const _dict = {
 		"PlayTestSound": PLAYTESTSOUND,
-		"PlaceHolderBeep": PLACEHOLDERBEEP
+		"PlaceHolderBeep": PLACEHOLDERBEEP,
+		"Strums": STRUMS,
+		"FilterSweepLoop": FILTERSWEEPLOOP
 	}
 
 class STATES:
@@ -20,7 +24,13 @@ class SWITCHES:
 
 class GAME_PARAMETERS:
 
-	const _dict = {}
+	const PANNING = 1820302072
+	const DUMMY = 4079084883
+
+	const _dict = {
+		"Panning": PANNING,
+		"Dummy": DUMMY
+	}
 
 class TRIGGERS:
 
