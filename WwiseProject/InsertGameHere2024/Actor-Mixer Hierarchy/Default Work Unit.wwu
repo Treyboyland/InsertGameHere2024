@@ -9,7 +9,7 @@
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
-							<ObjectRef Name="VolumeForDistance" ID="{115B85F1-E440-4258-A31D-A52023350181}" WorkUnitID="{5F9F630D-F0D3-4883-809D-52827EF2B289}"/>
+							<ObjectRef Name="VolumeForDistance3D" ID="{8741554B-A911-457C-BF32-235EB7789300}" WorkUnitID="{5F9F630D-F0D3-4883-809D-52827EF2B289}"/>
 						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72A2E9F5-390E-4F2F-8B2F-533E5E63D3B0}"/>
