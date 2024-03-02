@@ -15,9 +15,6 @@ sources/0 = SubResource("TileSetScenesCollectionSource_gnsbi")
 [node name="Main" type="Node2D"]
 script = ExtResource("1_vogl7")
 
-[node name="AkListener2D" type="AkListener2D" parent="."]
-position = Vector2(124, 59)
-
 [node name="Checker" parent="." instance=ExtResource("1_ap7x2")]
 position = Vector2(-614, -1021)
 square_size = 32

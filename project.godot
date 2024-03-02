@@ -10,8 +10,8 @@ config_version=5
 
 [application]
 
-config/name="Insert Game Here 2024"
-run/main_scene="res://scenes/main.tscn"
+config/name="Spark's Journey"
+run/main_scene="res://scenes/main_3d.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 WwiseRuntimeManager="*res://addons/Wwise/runtime/wwise_runtime_manager.gd"
 Global="*res://autoloads/Global.tscn"
+SceneSwitcher="*res://autoloads/scene_switcher.gd"
 
 [editor_plugins]
 
