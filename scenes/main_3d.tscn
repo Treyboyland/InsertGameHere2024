@@ -46,154 +46,80 @@ transform = Transform3D(908.333, 0, 0, 0, 1, 0, 0, 0, 480.94, -0.00839424, 0, -1
 use_collision = true
 mesh = SubResource("BoxMesh_p145e")
 
-[node name="CSGMesh3D3" type="CSGMesh3D" parent="env blocks"]
-transform = Transform3D(3.63795, 0, 0, 0, 10.3822, 0, 0, 0, 2.54983, -21.1546, 5.09898, -10.6054)
-use_collision = true
-mesh = SubResource("BoxMesh_p145e")
-
-[node name="CSGMesh3D4" type="CSGMesh3D" parent="env blocks"]
-transform = Transform3D(3.63795, 0, 0, 0, 10.3822, 0, 0, 0, 2.54983, -10.3778, 5.09898, -10.6054)
-use_collision = true
-mesh = SubResource("BoxMesh_p145e")
-
-[node name="CSGMesh3D5" type="CSGMesh3D" parent="env blocks"]
-transform = Transform3D(3.63795, 0, 0, 0, 10.3822, 0, 0, 0, 2.54983, -0.184019, 5.09898, -10.6054)
-use_collision = true
-mesh = SubResource("BoxMesh_p145e")
-
-[node name="CSGMesh3D6" type="CSGMesh3D" parent="env blocks"]
-transform = Transform3D(3.63795, 0, 0, 0, 10.3822, 0, 0, 0, 2.54983, 10.2854, 5.09898, -10.6054)
-use_collision = true
-mesh = SubResource("BoxMesh_p145e")
-
-[node name="CSGMesh3D7" type="CSGMesh3D" parent="env blocks"]
-transform = Transform3D(3.63795, 0, 0, 0, 10.3822, 0, 0, 0, 2.54983, 20.3184, 5.09898, -10.6054)
-use_collision = true
-mesh = SubResource("BoxMesh_p145e")
-
-[node name="CSGMesh3D8" type="CSGMesh3D" parent="env blocks"]
-transform = Transform3D(3.63795, 0, 0, 0, 10.3822, 0, 0, 0, 2.54983, 8.62294, -3.45267, 4.0399)
-use_collision = true
-mesh = SubResource("BoxMesh_p145e")
-
 [node name="CSGMesh3D9" type="CSGMesh3D" parent="env blocks"]
-transform = Transform3D(3.63795, 0, 0, 0, 10.3822, 0, 0, 0, 2.54983, 3.74185, -4.07164, 0.465216)
+transform = Transform3D(3.63795, 0, 0, 0, 5.69338, 0, 0, 0, 4.0263, 0.185669, -1.67962, 0.0281453)
 use_collision = true
 mesh = SubResource("BoxMesh_p145e")
 
 [node name="CSGMesh3D10" type="CSGMesh3D" parent="env blocks"]
-transform = Transform3D(3.63795, 0, 0, 0, 10.3822, 0, 0, 0, 2.54983, -5.14716, -4.07164, 2.58195)
+transform = Transform3D(3.63795, 0, 0, 0, 2.51787, 0, 0, 0, 4.05269, 0.185669, 5.32414, 0.0889649)
 use_collision = true
 mesh = SubResource("BoxMesh_p145e")
 
 [node name="CSGMesh3D11" type="CSGMesh3D" parent="env blocks"]
-transform = Transform3D(1.2153, 0, 0, 0, 10.3822, 0, 0, 0, 1.11304, 6.06871, -3.45267, -4.71388)
+transform = Transform3D(3.63795, 0, 0, 0, 5.69338, 0, 0, 0, 4.0263, 0.185669, -1.67962, 0.0281453)
 use_collision = true
 mesh = SubResource("BoxMesh_p145e")
 
 [node name="CSGMesh3D12" type="CSGMesh3D" parent="env blocks"]
-transform = Transform3D(1.2153, 0, 0, 0, 10.3822, 0, 0, 0, 1.11304, 4.43813, -4.07164, -6.27428)
+transform = Transform3D(3.63795, 0, 0, 0, 2.51787, 0, 0, 0, 4.05269, 0.185669, 5.32414, 0.0889649)
 use_collision = true
 mesh = SubResource("BoxMesh_p145e")
 
 [node name="CSGMesh3D13" type="CSGMesh3D" parent="env blocks"]
-transform = Transform3D(1.2153, 0, 0, 0, 10.3822, 0, 0, 0, 1.11304, 1.46865, -4.07164, -5.35029)
+transform = Transform3D(3.63795, 0, 0, 0, 5.69338, 0, 0, 0, 4.0263, 3.76139, -0.916511, 0.0281453)
 use_collision = true
 mesh = SubResource("BoxMesh_p145e")
 
 [node name="CSGMesh3D14" type="CSGMesh3D" parent="env blocks"]
-transform = Transform3D(1.2153, 0, 0, 0, 10.3822, 0, 0, 0, 1.11304, 6.24372, -3.45267, -15.7395)
+transform = Transform3D(3.63795, 0, 0, 0, 2.51787, 0, 0, 0, 4.05269, 3.76139, 6.08726, 0.0889649)
 use_collision = true
 mesh = SubResource("BoxMesh_p145e")
 
 [node name="CSGMesh3D15" type="CSGMesh3D" parent="env blocks"]
-transform = Transform3D(1.2153, 0, 0, 0, 10.3822, 0, 0, 0, 1.11304, 4.61314, -4.07164, -17.2999)
+transform = Transform3D(3.63795, 0, 0, 0, 5.69338, 0, 0, 0, 4.0263, -3.45548, -1.30897, 0.0281453)
 use_collision = true
 mesh = SubResource("BoxMesh_p145e")
 
 [node name="CSGMesh3D16" type="CSGMesh3D" parent="env blocks"]
-transform = Transform3D(1.2153, 0, 0, 0, 10.3822, 0, 0, 0, 1.11304, 1.64366, -4.07164, -16.3759)
+transform = Transform3D(3.63795, 0, 0, 0, 2.51787, 0, 0, 0, 4.05269, -3.45548, 5.6948, 0.0889649)
 use_collision = true
 mesh = SubResource("BoxMesh_p145e")
 
 [node name="CSGMesh3D17" type="CSGMesh3D" parent="env blocks"]
-transform = Transform3D(1.2153, 0, 0, 0, 10.3822, 0, 0, 0, 1.11304, -4.86941, -3.45267, -15.7395)
+transform = Transform3D(3.63795, 0, 0, 0, 5.69338, 0, 0, 0, 4.0263, -6.81318, 0.0864377, 0.0281453)
 use_collision = true
 mesh = SubResource("BoxMesh_p145e")
 
 [node name="CSGMesh3D18" type="CSGMesh3D" parent="env blocks"]
-transform = Transform3D(1.2153, 0, 0, 0, 10.3822, 0, 0, 0, 1.11304, -6.5, -4.07164, -17.2999)
+transform = Transform3D(3.63795, 0, 0, 0, 2.51787, 0, 0, 0, 4.05269, -6.81318, 7.0902, 0.0889649)
 use_collision = true
 mesh = SubResource("BoxMesh_p145e")
 
 [node name="CSGMesh3D19" type="CSGMesh3D" parent="env blocks"]
-transform = Transform3D(1.2153, 0, 0, 0, 10.3822, 0, 0, 0, 1.11304, -9.46948, -4.07164, -16.3759)
+transform = Transform3D(3.63795, 0, 0, 0, 5.69338, 0, 0, 0, 4.0263, -10.1709, 0.0646348, 0.0281453)
 use_collision = true
 mesh = SubResource("BoxMesh_p145e")
 
 [node name="CSGMesh3D20" type="CSGMesh3D" parent="env blocks"]
-transform = Transform3D(1.2153, 0, 0, 0, 10.3822, 0, 0, 0, 1.11304, -20.7953, -3.45267, -15.3895)
+transform = Transform3D(3.63795, 0, 0, 0, 2.51787, 0, 0, 0, 4.05269, -10.1709, 7.0684, 0.0889649)
 use_collision = true
 mesh = SubResource("BoxMesh_p145e")
 
 [node name="CSGMesh3D21" type="CSGMesh3D" parent="env blocks"]
-transform = Transform3D(1.2153, 0, 0, 0, 10.3822, 0, 0, 0, 1.11304, -22.4259, -4.07164, -16.9499)
+transform = Transform3D(3.63795, 0, 0, 0, 5.69338, 0, 0, 0, 4.0263, -13.6158, -0.00077486, 0.0281453)
 use_collision = true
 mesh = SubResource("BoxMesh_p145e")
 
 [node name="CSGMesh3D22" type="CSGMesh3D" parent="env blocks"]
-transform = Transform3D(1.2153, 0, 0, 0, 10.3822, 0, 0, 0, 1.11304, -25.3954, -4.07164, -16.0259)
-use_collision = true
-mesh = SubResource("BoxMesh_p145e")
-
-[node name="CSGMesh3D23" type="CSGMesh3D" parent="env blocks"]
-transform = Transform3D(1.2153, 0, 0, 0, 10.3822, 0, 0, 0, 1.11304, -15.1075, -3.45267, -3.92633)
-use_collision = true
-mesh = SubResource("BoxMesh_p145e")
-
-[node name="CSGMesh3D24" type="CSGMesh3D" parent="env blocks"]
-transform = Transform3D(1.2153, 0, 0, 0, 10.3822, 0, 0, 0, 1.11304, -16.7381, -4.07164, -5.48673)
-use_collision = true
-mesh = SubResource("BoxMesh_p145e")
-
-[node name="CSGMesh3D25" type="CSGMesh3D" parent="env blocks"]
-transform = Transform3D(1.2153, 0, 0, 0, 10.3822, 0, 0, 0, 1.11304, -19.7076, -4.07164, -4.56275)
-use_collision = true
-mesh = SubResource("BoxMesh_p145e")
-
-[node name="CSGMesh3D26" type="CSGMesh3D" parent="env blocks"]
-transform = Transform3D(1.2153, 0, 0, 0, 10.3822, 0, 0, 0, 1.11304, 17.8819, -3.45267, -15.3895)
-use_collision = true
-mesh = SubResource("BoxMesh_p145e")
-
-[node name="CSGMesh3D27" type="CSGMesh3D" parent="env blocks"]
-transform = Transform3D(1.2153, 0, 0, 0, 10.3822, 0, 0, 0, 1.11304, 16.2513, -4.07164, -16.9499)
-use_collision = true
-mesh = SubResource("BoxMesh_p145e")
-
-[node name="CSGMesh3D28" type="CSGMesh3D" parent="env blocks"]
-transform = Transform3D(1.2153, 0, 0, 0, 10.3822, 0, 0, 0, 1.11304, 13.2818, -4.07164, -16.0259)
-use_collision = true
-mesh = SubResource("BoxMesh_p145e")
-
-[node name="CSGMesh3D29" type="CSGMesh3D" parent="env blocks"]
-transform = Transform3D(1.2153, 0, 0, 0, 10.3822, 0, 0, 0, 1.11304, 20.7696, -3.45267, -4.97639)
-use_collision = true
-mesh = SubResource("BoxMesh_p145e")
-
-[node name="CSGMesh3D30" type="CSGMesh3D" parent="env blocks"]
-transform = Transform3D(1.2153, 0, 0, 0, 10.3822, 0, 0, 0, 1.11304, 19.139, -4.07164, -6.53679)
-use_collision = true
-mesh = SubResource("BoxMesh_p145e")
-
-[node name="CSGMesh3D31" type="CSGMesh3D" parent="env blocks"]
-transform = Transform3D(1.2153, 0, 0, 0, 10.3822, 0, 0, 0, 1.11304, 16.1695, -4.07164, -5.6128)
+transform = Transform3D(3.63795, 0, 0, 0, 2.51787, 0, 0, 0, 4.05269, -13.6158, 7.00299, 0.0889649)
 use_collision = true
 mesh = SubResource("BoxMesh_p145e")
 
 [node name="player" type="CharacterBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.82704, 0)
 script = ExtResource("1_nhb0t")
+JUMP_VELOCITY = 7.0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="player"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.582298, 0)
@@ -204,8 +130,8 @@ transform = Transform3D(0.482854, 0, 0, 0, 0.886587, 0, 0, 0, 0.531729, 0, 0.574
 mesh = SubResource("BoxMesh_aac6x")
 
 [node name="Camera3D" type="Camera3D" parent="player"]
-transform = Transform3D(1, 0, 0, 0, 0.949135, 0.31487, 0, -0.31487, 0.949135, 0.00753284, 4.19532, 10.6036)
-fov = 38.1
+transform = Transform3D(1, -7.62905e-11, -1.94519e-13, 7.62907e-11, 0.999994, 0.00343763, -6.77404e-14, -0.00343763, 0.999994, 0.00753284, 0.722702, 19.1673)
+fov = 27.6
 
 [node name="AkListener3D" type="AkListener3D" parent="player/Camera3D"]
 transform = Transform3D(1, 0, 0, 0, 0.258819, -0.965926, 0, 0.965926, 0.258819, 0, 0.0090301, -11.2216)
@@ -216,8 +142,8 @@ shadow_enabled = true
 
 [node name="Gong" type="AkEvent3D" parent="."]
 event = {
-"id": 2260221316,
-"name": "PlayTestSound"
+"id": 3473747615,
+"name": "Strums"
 }
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.3258, 1.10798, -7.45217)
 script = ExtResource("2_wghep")
