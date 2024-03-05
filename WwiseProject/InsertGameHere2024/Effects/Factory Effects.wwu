@@ -620,8 +620,8 @@
 								<Effect Name="Low_Pass_20KHz" ID="{830124FB-B9D5-4AE8-846E-E94A74652666}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 									<PropertyList>
 										<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
-										<Property Name="FilterTypeBand3" Type="int32" Value="0"/>
-										<Property Name="FrequencyBand3" Type="Real32" Value="20000"/>
+										<Property Name="FilterTypeBand3" Type="int32" Value="1"/>
+										<Property Name="FrequencyBand3" Type="Real32" Value="361"/>
 										<Property Name="OnOffBand1" Type="bool" Value="False"/>
 										<Property Name="OnOffBand2" Type="bool" Value="False"/>
 									</PropertyList>
@@ -633,14 +633,125 @@
 								<Effect Name="Single_Band_1Khz_Wide" ID="{9B6A1D1B-F90F-4EAC-B796-2943413957FE}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 									<PropertyList>
 										<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
-										<Property Name="FilterTypeBand2" Type="int32" Value="2"/>
-										<Property Name="FilterTypeBand3" Type="int32" Value="0"/>
+										<Property Name="FilterTypeBand2" Type="int32" Value="0"/>
+										<Property Name="FilterTypeBand3" Type="int32" Value="6"/>
 										<Property Name="FrequencyBand1" Type="Real32" Value="1000"/>
-										<Property Name="FrequencyBand3" Type="Real32" Value="10000"/>
+										<Property Name="FrequencyBand2" Type="Real32" Value="971"/>
+										<Property Name="FrequencyBand3" Type="Real32" Value="971"/>
+										<Property Name="GainBand3" Type="Real32" Value="5"/>
 										<Property Name="OnOffBand1" Type="bool" Value="False"/>
-										<Property Name="OnOffBand3" Type="bool" Value="False"/>
 										<Property Name="QFactorBand2" Type="Real32" Value="0.5"/>
+										<Property Name="QFactorBand3" Type="Real32" Value="0.5"/>
 									</PropertyList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{B1F2B9AC-CC86-43E2-89FB-F7B5DC06FD26}" ShortID="18294297">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="FrequencyBand2"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="WindFreqLFO" ID="{CA549DDE-624B-4D4E-AC47-D6110CF4A7C2}" WorkUnitID="{6A6B94A7-F6EE-4923-B2F2-1F25D8EEF08B}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{3DECC59A-A85E-4DEE-B763-6C9D3E203068}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="5"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>300</YPos>
+																				<Flags>21</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>1000</YPos>
+																				<Flags>53</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{F30DC6B5-863B-404F-9059-47BBF7E59233}" ShortID="1016084584">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="FrequencyBand3"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="WindFreqLFO" ID="{CA549DDE-624B-4D4E-AC47-D6110CF4A7C2}" WorkUnitID="{6A6B94A7-F6EE-4923-B2F2-1F25D8EEF08B}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{CF6995FD-6109-402F-9A0A-BE8161FB7425}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="5"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>300</YPos>
+																				<Flags>21</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>1000</YPos>
+																				<Flags>53</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{0FFE4168-69C7-4331-B258-3C7E7DE07ECA}" ShortID="642584882">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="GainBand3"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="WindResonanceLFO" ID="{7EB36DAC-0984-43D9-A94D-5008737E3E27}" WorkUnitID="{6A6B94A7-F6EE-4923-B2F2-1F25D8EEF08B}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{B3ED240B-5D7F-42C7-9BB0-190004F70BA1}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-5.01375</YPos>
+																				<Flags>21</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>5</YPos>
+																				<Flags>53</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
 								</Effect>
 								<Effect Name="Dual_Filters_Reset" ID="{C89DF4F6-C035-4745-868A-D8CBDCE8D96E}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 									<PropertyList>
@@ -1482,23 +1593,26 @@
 								</Effect>
 								<Effect Name="Space_Garage" ID="{1AF92D84-49DD-4BBC-8F29-6C6D10082B6E}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 									<PropertyList>
+										<Property Name="DecayTime" Type="Real32" Value="10"/>
 										<Property Name="Density" Type="Real32" Value="100"/>
-										<Property Name="Diffusion" Type="Real32" Value="45"/>
-										<Property Name="ERLevel" Type="Real32" Value="-17"/>
-										<Property Name="ERPattern" Type="int32" Value="30"/>
-										<Property Name="Filter1Freq" Type="Real32" Value="300"/>
-										<Property Name="Filter1Gain" Type="Real32" Value="4"/>
-										<Property Name="Filter2Freq" Type="Real32" Value="2480"/>
-										<Property Name="Filter2Gain" Type="Real32" Value="-24"/>
-										<Property Name="Filter3Freq" Type="Real32" Value="9290"/>
-										<Property Name="Filter3Gain" Type="Real32" Value="0.5"/>
+										<Property Name="DryLevel" Type="Real32" Value="-0.3"/>
+										<Property Name="ERLevel" Type="Real32" Value="-27"/>
+										<Property Name="ERPattern" Type="int32" Value="29"/>
+										<Property Name="EnableToneControls" Type="bool" Value="True"/>
+										<Property Name="Filter1Freq" Type="Real32" Value="540"/>
+										<Property Name="Filter1Gain" Type="Real32" Value="-5.5"/>
+										<Property Name="Filter2Freq" Type="Real32" Value="1470"/>
+										<Property Name="Filter2Gain" Type="Real32" Value="-4"/>
+										<Property Name="Filter2Q" Type="Real32" Value="0.9"/>
+										<Property Name="Filter3Freq" Type="Real32" Value="7420"/>
+										<Property Name="Filter3Gain" Type="Real32" Value="2.5"/>
 										<Property Name="Filter3InsertPos" Type="int32" Value="1"/>
 										<Property Name="HFDamping" Type="Real32" Value="1.4"/>
-										<Property Name="PreDelay" Type="Real32" Value="128"/>
-										<Property Name="ReverbLevel" Type="Real32" Value="-16"/>
-										<Property Name="RoomShape" Type="Real32" Value="69"/>
-										<Property Name="RoomSize" Type="Real32" Value="38"/>
-										<Property Name="StereoWidth" Type="Real32" Value="150"/>
+										<Property Name="PreDelay" Type="Real32" Value="200"/>
+										<Property Name="Quality" Type="int32" Value="16"/>
+										<Property Name="ReverbLevel" Type="Real32" Value="-21"/>
+										<Property Name="RoomShape" Type="Real32" Value="0"/>
+										<Property Name="RoomSize" Type="Real32" Value="100"/>
 									</PropertyList>
 								</Effect>
 							</ChildrenList>

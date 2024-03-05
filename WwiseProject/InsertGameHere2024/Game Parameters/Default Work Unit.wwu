@@ -12,6 +12,7 @@
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="Dummy" ID="{0C989647-0277-435E-B197-43855C874135}"/>
+				<GameParameter Name="WindFreq" ID="{4B7FF2D2-CC2A-4917-8173-1F9D8538A0EF}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

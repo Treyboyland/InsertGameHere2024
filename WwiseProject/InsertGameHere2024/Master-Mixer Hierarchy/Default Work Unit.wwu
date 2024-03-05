@@ -9,13 +9,154 @@
 							<ObjectRef Name="System" ID="{EB12A5C2-C674-4A2A-92D0-6ADE173D63AC}" WorkUnitID="{BE076596-102D-47A4-981D-BFDBB6A3A15A}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="SFX" ID="{16B2EB62-0A7E-4AA7-9BD4-EF312BE6A919}">
+							<ChildrenList>
+								<Bus Name="World" ID="{84C312DD-7684-4371-A9B5-D4249BAEB533}">
+									<ChildrenList>
+										<Bus Name="Ambient" ID="{B611DB50-8655-4005-8C06-4EC8BCF804A9}">
+											<ChildrenList>
+												<Bus Name="Wind" ID="{F4AEBFEE-BCD2-4A0A-8BDA-0E0AB1B3EFC6}">
+													<PropertyList>
+														<Property Name="BusChannelConfig" Type="int32">
+															<ValueList>
+																<Value>12546</Value>
+															</ValueList>
+														</Property>
+														<Property Name="BusVolume" Type="Real64">
+															<ValueList>
+																<Value>-4</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ObjectLists>
+														<ObjectList Name="Effects">
+															<Reference>
+																<Local>
+																	<EffectSlot Name="" ID="{C7C22A9E-DD5E-474C-9A7D-A85B46142ADE}" ShortID="861413860">
+																		<ReferenceList>
+																			<Reference Name="Effect">
+																				<Custom>
+																					<Effect Name="Meter (Custom)" ID="{BD181F5D-4058-430C-84D4-EC61E962C40A}" ShortID="59998620" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3"/>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</EffectSlot>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<EffectSlot Name="" ID="{32D83E02-B838-485C-BCDD-10A1FF990321}" ShortID="976403491">
+																		<ReferenceList>
+																			<Reference Name="Effect">
+																				<Custom CreatedFrom="{4FF7C4B2-37B0-4DFF-8E8A-1420102AE2DD}">
+																					<Effect Name="Space_Dreaming (Custom)" ID="{7E647DE3-B966-492A-93FB-A8D1FA914336}" ShortID="952604323" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																						<PropertyList>
+																							<Property Name="DecayTime" Type="Real32" Value="10"/>
+																							<Property Name="Density" Type="Real32" Value="100"/>
+																							<Property Name="Diffusion" Type="Real32" Value="53"/>
+																							<Property Name="DryLevel" Type="Real32" Value="0"/>
+																							<Property Name="ERPattern" Type="int32" Value="29"/>
+																							<Property Name="EnableToneControls" Type="bool" Value="True"/>
+																							<Property Name="Filter1Freq" Type="Real32" Value="250"/>
+																							<Property Name="Filter1Gain" Type="Real32" Value="-11"/>
+																							<Property Name="Filter2Freq" Type="Real32" Value="940"/>
+																							<Property Name="Filter2Gain" Type="Real32" Value="-3"/>
+																							<Property Name="Filter2Q" Type="Real32" Value="0.1"/>
+																							<Property Name="Filter3Freq" Type="Real32" Value="4750"/>
+																							<Property Name="Filter3Gain" Type="Real32" Value="2.5"/>
+																							<Property Name="HFDamping" Type="Real32" Value="7.05"/>
+																							<Property Name="PreDelay" Type="Real32" Value="200"/>
+																							<Property Name="Quality" Type="int32" Value="6"/>
+																							<Property Name="ReverbLevel" Type="Real32" Value="-10"/>
+																							<Property Name="RoomShape" Type="Real32" Value="81"/>
+																							<Property Name="RoomSize" Type="Real32" Value="100"/>
+																						</PropertyList>
+																					</Effect>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</EffectSlot>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<EffectSlot Name="" ID="{FC91E530-7EBA-43C9-86F6-E8F5EEF66768}" ShortID="697736019">
+																		<PropertyList>
+																			<Property Name="Bypass" Type="bool">
+																				<ValueList>
+																					<Value>True</Value>
+																				</ValueList>
+																			</Property>
+																		</PropertyList>
+																		<ReferenceList>
+																			<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																				<ObjectRef Name="Space_Garage" ID="{1AF92D84-49DD-4BBC-8F29-6C6D10082B6E}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+																			</Reference>
+																		</ReferenceList>
+																	</EffectSlot>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<EffectSlot Name="" ID="{D3FF80CF-E8BC-43AE-90F6-020EAB1DAFE1}" ShortID="202023267">
+																		<ReferenceList>
+																			<Reference Name="Effect">
+																				<Custom>
+																					<Effect Name="Parametric EQ (Custom)" ID="{E4466173-824E-4B50-9167-D85C72389431}" ShortID="1029588481" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																						<PropertyList>
+																							<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
+																							<Property Name="FilterTypeBand3" Type="int32" Value="6"/>
+																							<Property Name="FrequencyBand2" Type="Real32" Value="512"/>
+																							<Property Name="FrequencyBand3" Type="Real32" Value="4339"/>
+																							<Property Name="GainBand1" Type="Real32" Value="-5.5"/>
+																							<Property Name="GainBand2" Type="Real32" Value="-0.5"/>
+																							<Property Name="GainBand3" Type="Real32" Value="5"/>
+																							<Property Name="QFactorBand2" Type="Real32" Value="0.5"/>
+																							<Property Name="QFactorBand3" Type="Real32" Value="0.5"/>
+																						</PropertyList>
+																					</Effect>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</EffectSlot>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<EffectSlot Name="" ID="{C67A16A8-AA48-497D-B3EA-9EE491C37F21}" ShortID="319317880">
+																		<ReferenceList>
+																			<Reference Name="Effect">
+																				<Custom>
+																					<Effect Name="Compressor (Custom)" ID="{973C9519-6BCC-4C69-857C-550D48CD1002}" ShortID="287204507" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+																						<PropertyList>
+																							<Property Name="AttackTime" Type="Real32" Value="0"/>
+																							<Property Name="Ratio" Type="Real32" Value="2.5"/>
+																							<Property Name="ReleaseTime" Type="Real32" Value="0.46"/>
+																							<Property Name="Threshold" Type="Real32" Value="-24.9"/>
+																						</PropertyList>
+																					</Effect>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</EffectSlot>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</Bus>
+											</ChildrenList>
+										</Bus>
+									</ChildrenList>
+								</Bus>
+							</ChildrenList>
+						</Bus>
+					</ChildrenList>
 					<ObjectLists>
 						<ObjectList Name="Effects">
 							<Reference>
 								<Local>
-									<EffectSlot Name="" ID="{F61F084D-38C1-4419-88C3-E1FBE78AE3BB}" ShortID="985891456">
-										<ReferenceList/>
-									</EffectSlot>
+									<EffectSlot Name="" ID="{F61F084D-38C1-4419-88C3-E1FBE78AE3BB}" ShortID="985891456"/>
 								</Local>
 							</Reference>
 						</ObjectList>

@@ -23,6 +23,7 @@ namespace AK
     {
         static const AkUniqueID DUMMY = 4079084883U;
         static const AkUniqueID PANNING = 1820302072U;
+        static const AkUniqueID WINDFREQ = 3571474009U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS
@@ -33,7 +34,11 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID AMBIENT = 77978275U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID SFX = 393239870U;
+        static const AkUniqueID WIND = 1537061107U;
+        static const AkUniqueID WORLD = 2609808943U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

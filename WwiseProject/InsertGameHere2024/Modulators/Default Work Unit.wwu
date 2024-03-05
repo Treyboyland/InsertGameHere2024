@@ -1,6 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{6A6B94A7-F6EE-4923-B2F2-1F25D8EEF08B}" SchemaVersion="119">
 	<Modulators>
-		<WorkUnit Name="Default Work Unit" ID="{6A6B94A7-F6EE-4923-B2F2-1F25D8EEF08B}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{6A6B94A7-F6EE-4923-B2F2-1F25D8EEF08B}" PersistMode="Standalone">
+			<ChildrenList>
+				<ModulatorLfo Name="WindFreqLFO" ID="{CA549DDE-624B-4D4E-AC47-D6110CF4A7C2}" ShortID="127156305">
+					<PropertyList>
+						<Property Name="LfoDepth" Type="Real64" Value="43.7">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{0066A3FB-134F-4E6D-BD96-59F62F14CCED}">
+										<PropertyList>
+											<Property Name="Max" Type="Real64" Value="7"/>
+											<Property Name="Min" Type="Real64" Value="-7"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="LfoFrequency" Type="Real64" Value="0.06">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{04C81B83-7665-4FD8-B5C4-D987A8686D7D}">
+										<PropertyList>
+											<Property Name="Max" Type="Real64" Value="3368"/>
+											<Property Name="Min" Type="Real64" Value="-3263"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="ModulatorScope" Type="int32" Value="0"/>
+					</PropertyList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{86000EAA-6F14-4098-A3FE-D2DA31919A2C}" ShortID="271024812">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="LfoDepth"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="LFOFreqLFO" ID="{F61AEBAC-F3F7-4294-BE75-666B04778E18}" WorkUnitID="{6A6B94A7-F6EE-4923-B2F2-1F25D8EEF08B}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{E558490F-54FF-481F-82B8-05CD8A806E88}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>100</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{6AD49430-9FD2-4B02-B952-CCE513B115BF}" ShortID="813986232">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="LfoFrequency"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="LFOFreqLFO" ID="{F61AEBAC-F3F7-4294-BE75-666B04778E18}" WorkUnitID="{6A6B94A7-F6EE-4923-B2F2-1F25D8EEF08B}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{6EBA4E2F-71F2-4DD4-803C-3514307AC46A}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="5"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0.10447</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0.02313</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</ModulatorLfo>
+				<ModulatorLfo Name="LFOFreqLFO" ID="{F61AEBAC-F3F7-4294-BE75-666B04778E18}" ShortID="420874507">
+					<PropertyList>
+						<Property Name="LfoDepth" Type="Real64" Value="76.3"/>
+						<Property Name="LfoFrequency" Type="Real64" Value="0.02"/>
+						<Property Name="LfoSmoothing" Type="Real64" Value="100"/>
+					</PropertyList>
+				</ModulatorLfo>
+				<ModulatorLfo Name="LFODepthLFO" ID="{8A13102B-F845-49DC-9BF0-C96096E0FFB1}" ShortID="929840469">
+					<PropertyList>
+						<Property Name="LfoFrequency" Type="Real64" Value="0.16"/>
+					</PropertyList>
+				</ModulatorLfo>
+				<ModulatorLfo Name="WindVerbFreqLFO" ID="{932435AE-956E-4CBE-8B92-3BEE352DE964}" ShortID="186066501">
+					<PropertyList>
+						<Property Name="LfoDepth" Type="Real64" Value="60"/>
+						<Property Name="LfoFrequency" Type="Real64" Value="0.111"/>
+					</PropertyList>
+				</ModulatorLfo>
+				<ModulatorLfo Name="WindResonanceLFO" ID="{7EB36DAC-0984-43D9-A94D-5008737E3E27}" ShortID="990504295">
+					<PropertyList>
+						<Property Name="LfoFrequency" Type="Real64" Value="0.086"/>
+					</PropertyList>
+				</ModulatorLfo>
+			</ChildrenList>
+		</WorkUnit>
 	</Modulators>
 </WwiseDocument>

@@ -9,20 +9,46 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{2DE308DB-4F1E-EE72-A4BB-E05E88051C44}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{7AA89130-7C53-F833-86A6-9C91706E0749}">
 			<ShortName>Init</ShortName>
 			<Path>1355168291.bnk</Path>
 			<Plugins>
+				<Custom>
+					<Plugin Id="59998620" Name="Meter (Custom)" LibName="Wwise Meter" LibId="8454147"/>
+					<Plugin Id="287204507" Name="Compressor (Custom)" LibName="Wwise Compressor" LibId="7077891"/>
+					<Plugin Id="952604323" Name="Space_Dreaming (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="1029588481" Name="Parametric EQ (Custom)" LibName="Wwise Parametric EQ" LibId="6881283"/>
+				</Custom>
+				<ShareSets>
+					<Plugin Id="415841907" Name="Space_Garage" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
 				</AudioDevices>
 			</Plugins>
 			<Busses>
+				<Bus Id="77978275" Name="Ambient"/>
+				<Bus Id="393239870" Name="SFX"/>
+				<Bus Id="1537061107" Name="Wind">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="59998620"/>
+							<PluginRef Id="287204507"/>
+							<PluginRef Id="952604323"/>
+							<PluginRef Id="1029588481"/>
+						</Custom>
+						<ShareSets>
+							<PluginRef Id="415841907"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
+				<Bus Id="2609808943" Name="World"/>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 			<GameParameters>
 				<GameParameter Id="1820302072" Name="Panning"/>
+				<GameParameter Id="3571474009" Name="WindFreq"/>
 				<GameParameter Id="4079084883" Name="Dummy"/>
 			</GameParameters>
 			<AcousticTextures>
@@ -222,5 +248,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F798F453-7C96-913B-ABD9-1E6B8AE42FE5}</FileHash>
+	<FileHash>{9CA3032A-212C-7193-FFBB-EEF27F7B926E}</FileHash>
 </SoundBanksInfo>
