@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{E550FD83-CAC8-4BC4-89B2-5656B317C8F6}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{3C0D2A4B-99DF-1547-3718-283B7ED58028}">
 			<ShortName>Init</ShortName>
 			<Path>1355168291.bnk</Path>
 			<Plugins>
@@ -180,7 +180,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="2858921253" Type="User" Language="SFX" Hash="{24E05676-46A2-803B-6B0B-AB504234F381}">
+		<SoundBank Id="2858921253" Type="User" Language="SFX" Hash="{B9DBD4C1-67DA-E2E4-3929-B6CD19525663}">
 			<ShortName>Allinone</ShortName>
 			<Path>2858921253.bnk</Path>
 			<Media>
@@ -217,6 +217,15 @@
 					<CachePath>SFX/Strum1Mono_818F3B66.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="40290382" Name="Synth One" LibName="Wwise Synth One" LibId="9699330"/>
+				</Custom>
+				<ShareSets>
+					<Plugin Id="1008402193" Name="Low_Pass_20KHz" LibName="Wwise Parametric EQ" LibId="6881283"/>
+					<Plugin Id="2667647788" Name="Single_Band_1Khz_Wide" LibName="Wwise Parametric EQ" LibId="6881283"/>
+				</ShareSets>
+			</Plugins>
 			<Events>
 				<Event Id="889841071" Name="FilterSweepLoop">
 					<MediaRefs>
@@ -242,11 +251,22 @@
 						<MediaRef Id="971092194"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1537061107" Name="Wind">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="40290382"/>
+						</Custom>
+						<ShareSets>
+							<PluginRef Id="1008402193"/>
+							<PluginRef Id="2667647788"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
 			</Events>
 			<GameParameters>
 				<GameParameter Id="1820302072" Name="Panning"/>
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4ED82061-D937-1B22-5C9C-0AD08ECE7BD9}</FileHash>
+	<FileHash>{AEAD682D-9AEE-5E64-3802-88BDB357E673}</FileHash>
 </SoundBanksInfo>
