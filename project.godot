@@ -21,6 +21,13 @@ WwiseRuntimeManager="*res://addons/Wwise/runtime/wwise_runtime_manager.gd"
 Global="*res://autoloads/Global.tscn"
 SceneSwitcher="*res://autoloads/scene_switcher.gd"
 
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1280
+window/size/mode=3
+window/size/initial_position_type=2
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/Wwise/plugin.cfg")
