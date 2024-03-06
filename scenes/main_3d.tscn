@@ -1,10 +1,9 @@
-[gd_scene load_steps=19 format=3 uid="uid://ciqdbjt4u1lq2"]
+[gd_scene load_steps=18 format=3 uid="uid://ciqdbjt4u1lq2"]
 
 [ext_resource type="Script" path="res://scenes/main_3d.gd" id="1_i23ro"]
-[ext_resource type="Script" path="res://scenes/CharacterBody3D.gd" id="1_nhb0t"]
+[ext_resource type="Script" path="res://Player/Player.gd" id="1_nhb0t"]
 [ext_resource type="Script" path="res://scenes/testsound.gd" id="2_wghep"]
 [ext_resource type="Texture2D" uid="uid://bbx0x58wwq7f8" path="res://greeble-block.png" id="4_gasq1"]
-[ext_resource type="Script" path="res://scenes/Sprite3D.gd" id="5_jcmnq"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_7tf0d"]
 sky_top_color = Color(0.329412, 0.509804, 0.905882, 1)
@@ -997,42 +996,39 @@ light_color = Color(0.929412, 0.52549, 0.392157, 1)
 light_energy = 5.713
 omni_range = 14.3881
 
-[node name="Sprite3D" type="Sprite3D" parent="."]
+[node name="Billboards" type="Node3D" parent="."]
+
+[node name="Sprite3D" type="Sprite3D" parent="Billboards"]
 transform = Transform3D(2.91671, 0, 0, 0, 2.61412, 0, 0, 0, 1, -10.0629, 1.06095, -3.4452)
 modulate = Color(0.490196, 0.403922, 0.45098, 1)
 shaded = true
 double_sided = false
 texture = ExtResource("4_gasq1")
-script = ExtResource("5_jcmnq")
 
-[node name="Sprite3D2" type="Sprite3D" parent="."]
+[node name="Sprite3D2" type="Sprite3D" parent="Billboards"]
 transform = Transform3D(2.91671, 0, 0, 0, 2.61412, 0, 0, 0, 1, -6.81578, 6.35296, -3.4452)
 modulate = Color(0.490196, 0.403922, 0.45098, 1)
 shaded = true
 double_sided = false
 texture = ExtResource("4_gasq1")
-script = ExtResource("5_jcmnq")
 
-[node name="Sprite3D3" type="Sprite3D" parent="."]
+[node name="Sprite3D3" type="Sprite3D" parent="Billboards"]
 transform = Transform3D(2.91671, 0, 0, 0, 2.61412, 0, 0, 0, 1, -1.17805, 2.65033, -3.4452)
 modulate = Color(0.490196, 0.403922, 0.45098, 1)
 shaded = true
 double_sided = false
 texture = ExtResource("4_gasq1")
-script = ExtResource("5_jcmnq")
 
-[node name="Sprite3D4" type="Sprite3D" parent="."]
+[node name="Sprite3D4" type="Sprite3D" parent="Billboards"]
 transform = Transform3D(2.91671, 0, 0, 0, 2.61412, 0, 0, 0, 1, 12.8008, 2.73845, -3.4452)
 modulate = Color(0.490196, 0.403922, 0.45098, 1)
 shaded = true
 double_sided = false
 texture = ExtResource("4_gasq1")
-script = ExtResource("5_jcmnq")
 
-[node name="Sprite3D5" type="Sprite3D" parent="."]
+[node name="Sprite3D5" type="Sprite3D" parent="Billboards"]
 transform = Transform3D(4.44841, 0, 0, 0, 4.58326, 0, 0, 0, 1, 5.3304, 2.54612, -9.85573)
 modulate = Color(0.490196, 0.403922, 0.45098, 1)
 shaded = true
 double_sided = false
 texture = ExtResource("4_gasq1")
-script = ExtResource("5_jcmnq")
