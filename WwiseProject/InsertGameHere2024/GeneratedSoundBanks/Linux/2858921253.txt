@@ -1,0 +1,19 @@
+Event	ID	Name			Wwise Object Path	Notes
+	889841071	FilterSweepLoop			\Default Work Unit\FilterSweepLoop	
+	1847609664	PlaceHolderBeep			\Default Work Unit\PlaceHolderBeep	
+	2260221316	PlayTestSound			\Default Work Unit\PlayTestSound	
+	3473747615	Strums			\Default Work Unit\Strums	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1820302072	Panning			\Default Work Unit\Panning	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	54259996	Strum3Mono	F:\GodotProjects\InsertGameHere2024\WwiseProject\InsertGameHere2024\.cache\Linux\SFX\Strum3Mono_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\InternalDevStuff\Strums\Strum3Mono		705698
+	149323564	Strum2Mono	F:\GodotProjects\InsertGameHere2024\WwiseProject\InsertGameHere2024\.cache\Linux\SFX\Strum2Mono_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\InternalDevStuff\Strums\Strum2Mono		705698
+	193780630	PlaceHolderBeep	F:\GodotProjects\InsertGameHere2024\WwiseProject\InsertGameHere2024\.cache\Linux\SFX\BeepSqareC3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\InternalDevStuff\PlaceHolderBeep		24096
+	494851817	SFXTester	F:\GodotProjects\InsertGameHere2024\WwiseProject\InsertGameHere2024\.cache\Linux\SFX\Weird Techy Sound_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\InternalDevStuff\SFXTester		447960
+	509926617	Strum5Mono	F:\GodotProjects\InsertGameHere2024\WwiseProject\InsertGameHere2024\.cache\Linux\SFX\Strum5Mono_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\InternalDevStuff\Strums\Strum5Mono		705698
+	657504833	FilterSweepMono	F:\GodotProjects\InsertGameHere2024\WwiseProject\InsertGameHere2024\.cache\Linux\SFX\FilterSweepMono_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\InternalDevStuff\FilterSweepMono		1411298
+	875894189	Strum4Mono	F:\GodotProjects\InsertGameHere2024\WwiseProject\InsertGameHere2024\.cache\Linux\SFX\Strum4Mono_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\InternalDevStuff\Strums\Strum4Mono		705698
+	971092194	Strum1Mono	F:\GodotProjects\InsertGameHere2024\WwiseProject\InsertGameHere2024\.cache\Linux\SFX\Strum1Mono_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\InternalDevStuff\Strums\Strum1Mono		705698
+

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Linux" BasePlatform="Linux" SchemaVersion="16" SoundBankVersion="150">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Linux</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{7AAABA63-DDC9-D9A6-EDFB-B7C67B36A5A8}">
+			<ShortName>Init</ShortName>
+			<Path>1355168291.bnk</Path>
+			<Plugins>
+				<Custom>
+					<Plugin Id="59998620" Name="Meter (Custom)" LibName="Wwise Meter" LibId="8454147"/>
+					<Plugin Id="287204507" Name="Compressor (Custom)" LibName="Wwise Compressor" LibId="7077891"/>
+					<Plugin Id="952604323" Name="Space_Dreaming (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="1029588481" Name="Parametric EQ (Custom)" LibName="Wwise Parametric EQ" LibId="6881283"/>
+				</Custom>
+				<ShareSets>
+					<Plugin Id="415841907" Name="Space_Garage" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="77978275" Name="Ambient"/>
+				<Bus Id="393239870" Name="SFX"/>
+				<Bus Id="1537061107" Name="Wind">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="59998620"/>
+							<PluginRef Id="287204507"/>
+							<PluginRef Id="952604323"/>
+							<PluginRef Id="1029588481"/>
+						</Custom>
+						<ShareSets>
+							<PluginRef Id="415841907"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
+				<Bus Id="2609808943" Name="World"/>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+			<GameParameters>
+				<GameParameter Id="1820302072" Name="Panning"/>
+				<GameParameter Id="3571474009" Name="WindFreq"/>
+				<GameParameter Id="4079084883" Name="Dummy"/>
+			</GameParameters>
+			<AcousticTextures>
+				<AcousticTexture Id="504532776" Name="Brick">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="12"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="18"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="23"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="513139656" Name="Mountain">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="0"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="841620460" Name="Concrete">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="14"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1755085759" Name="Wood_Deep">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="1"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="8"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="20"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1873957695" Name="Anechoic">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1970351858" Name="Fabric">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="3"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="13"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="48"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="72"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2058049674" Name="Wood">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="32"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="25"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="20"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2412606308" Name="Carpet">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="46"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="45"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="76"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2637588553" Name="Tile">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="67"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="41"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="12"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="0"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2928161104" Name="Curtains">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="7"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="60"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="84"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="3195498748" Name="Cork_Tiles">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="14"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="30"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="73"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="3670307564" Name="Drywall">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="2"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="4168643977" Name="Acoustic_Banner">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="37"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="4262522749" Name="Wood_Bright">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="32"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="25"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="10"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="9"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+			</AcousticTextures>
+		</SoundBank>
+		<SoundBank Id="2858921253" Type="User" Language="SFX" Hash="{24E05676-46A2-803B-6B0B-AB504234F381}">
+			<ShortName>Allinone</ShortName>
+			<Path>2858921253.bnk</Path>
+			<Media>
+				<File Id="54259996" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Strum3Mono.wav</ShortName>
+					<CachePath>SFX/Strum3Mono_818F3B66.wem</CachePath>
+				</File>
+				<File Id="149323564" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Strum2Mono.wav</ShortName>
+					<CachePath>SFX/Strum2Mono_818F3B66.wem</CachePath>
+				</File>
+				<File Id="193780630" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BeepSqareC3.wav</ShortName>
+					<CachePath>SFX/BeepSqareC3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="494851817" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Weird Techy Sound.wav</ShortName>
+					<CachePath>SFX/Weird Techy Sound_818F3B66.wem</CachePath>
+				</File>
+				<File Id="509926617" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Strum5Mono.wav</ShortName>
+					<CachePath>SFX/Strum5Mono_818F3B66.wem</CachePath>
+				</File>
+				<File Id="657504833" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FilterSweepMono.wav</ShortName>
+					<CachePath>SFX/FilterSweepMono_818F3B66.wem</CachePath>
+				</File>
+				<File Id="875894189" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Strum4Mono.wav</ShortName>
+					<CachePath>SFX/Strum4Mono_818F3B66.wem</CachePath>
+				</File>
+				<File Id="971092194" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Strum1Mono.wav</ShortName>
+					<CachePath>SFX/Strum1Mono_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="889841071" Name="FilterSweepLoop">
+					<MediaRefs>
+						<MediaRef Id="657504833"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1847609664" Name="PlaceHolderBeep">
+					<MediaRefs>
+						<MediaRef Id="193780630"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2260221316" Name="PlayTestSound">
+					<MediaRefs>
+						<MediaRef Id="494851817"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3473747615" Name="Strums">
+					<MediaRefs>
+						<MediaRef Id="54259996"/>
+						<MediaRef Id="149323564"/>
+						<MediaRef Id="509926617"/>
+						<MediaRef Id="875894189"/>
+						<MediaRef Id="971092194"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="1820302072" Name="Panning"/>
+			</GameParameters>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{69ECF3AF-E0BD-408A-74B5-0BB6CBC78DF9}</FileHash>
+</SoundBanksInfo>

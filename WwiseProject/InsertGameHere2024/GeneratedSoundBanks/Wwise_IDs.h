@@ -17,7 +17,6 @@ namespace AK
         static const AkUniqueID PLACEHOLDERBEEP = 1847609664U;
         static const AkUniqueID PLAYTESTSOUND = 2260221316U;
         static const AkUniqueID STRUMS = 3473747615U;
-        static const AkUniqueID WIND = 1537061107U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS
