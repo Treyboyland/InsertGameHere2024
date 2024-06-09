@@ -10,6 +10,6 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-		if Input.is_action_just_released("ui_down"):
+		if Input.is_action_just_released("player_swap"):
 			player.user_controlled = not player.user_controlled
 			player_2.user_controlled = not player_2.user_controlled

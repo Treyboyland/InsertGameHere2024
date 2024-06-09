@@ -1,5 +1,5 @@
 @tool
-class_name Player
+class_name PlayerCharacter
 extends CharacterBody3D
 
 

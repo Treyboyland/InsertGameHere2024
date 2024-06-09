@@ -918,7 +918,7 @@ fov = 27.6
 transform = Transform3D(1, 0, 0, 0, 0.258819, -0.965926, 0, 0.965926, 0.258819, 0, 0.0090301, -11.2216)
 
 [node name="player2" type="CharacterBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5364, 2.9175, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5364, 2.66978, 0)
 script = ExtResource("1_nhb0t")
 
 [node name="CSGMesh3D" type="CSGMesh3D" parent="player2"]
@@ -928,6 +928,7 @@ material = SubResource("StandardMaterial3D_r4q00")
 
 [node name="Camera3D" type="Camera3D" parent="player2"]
 transform = Transform3D(1, -7.62905e-11, -1.94519e-13, 7.62907e-11, 0.999994, 0.00343763, -6.77404e-14, -0.00343763, 0.999994, 0.00753284, 0.722702, 19.1673)
+current = true
 fov = 27.6
 
 [node name="AkListener3D" type="AkListener3D" parent="player2/Camera3D"]
