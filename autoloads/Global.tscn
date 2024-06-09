@@ -4,6 +4,8 @@
 
 [node name="Global" type="Node2D"]
 script = ExtResource("1_xoo3h")
+unusedScene = "res://scenes/main_3d.tscn"
+level_list = Array[String](["res://scenes/levels/level_0.tscn", "res://scenes/main_3d.tscn"])
 
 [node name="AkBank2" type="AkBank" parent="."]
 bank = {

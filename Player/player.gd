@@ -5,6 +5,7 @@ extends CharacterBody3D
 
 @export var SPEED = 3.0
 @export var JUMP_VELOCITY = 4.5
+## True in order to enable player movement and gravity (will cause the player to fall in editor)
 @export var user_controlled: bool = true
 @export var alive:bool = true
 @onready var camera_3d = get_node("Camera3D")
@@ -16,7 +17,7 @@ func _ready():
 	pass
 
 func _physics_process(delta):
-	if user_controlled:
+	if user_controlled and Global.can_player_move:
 		handle_input(delta)
 	# Add the gravity.
 func handle_input(delta):
