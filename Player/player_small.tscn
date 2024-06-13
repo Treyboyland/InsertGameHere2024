@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://cmxuf3upqrlws"]
+[gd_scene load_steps=6 format=3 uid="uid://cmxuf3upqrlws"]
 
 [ext_resource type="Script" path="res://Player/Player.gd" id="1_hoh3q"]
+[ext_resource type="PackedScene" uid="uid://cq2tmiy2nv4oo" path="res://Player/spark_radius.tscn" id="2_0u0kx"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_ksnak"]
 size = Vector3(0.5, 0.5, 0.5)
@@ -11,11 +12,11 @@ albedo_color = Color(0, 0, 1, 1)
 [sub_resource type="BoxShape3D" id="BoxShape3D_3d7kg"]
 size = Vector3(0.5, 0.5, 0.5)
 
-[node name="player" type="CharacterBody3D" groups=["Player"]]
+[node name="PlayerSmall" type="CharacterBody3D" groups=["Player"]]
 velocity = Vector3(0, -101.756, 0)
 script = ExtResource("1_hoh3q")
 SPEED = 5.0
-JUMP_VELOCITY = 7.0
+JUMP_VELOCITY = 0.0
 user_controlled = false
 
 [node name="Camera3D" type="Camera3D" parent="."]
@@ -32,3 +33,5 @@ material = SubResource("StandardMaterial3D_5kpuk")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("BoxShape3D_3d7kg")
+
+[node name="SparkRadius" parent="." instance=ExtResource("2_0u0kx")]

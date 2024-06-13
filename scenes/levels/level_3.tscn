@@ -1,9 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://dh6ns5c0ccdx3"]
+[gd_scene load_steps=6 format=3 uid="uid://dkkljh533msx7"]
 
-[ext_resource type="PackedScene" uid="uid://ljsnx8ikks2d" path="res://scenes/world_environment.tscn" id="1_041e8"]
-[ext_resource type="PackedScene" uid="uid://cmxuf3upqrlws" path="res://Player/player_small.tscn" id="1_fugmr"]
-[ext_resource type="PackedScene" uid="uid://35vtn3rs07kk" path="res://scenes/level_goal.tscn" id="3_1d2ny"]
-[ext_resource type="Script" path="res://scenes/testsound.gd" id="4_gnr5d"]
+[ext_resource type="PackedScene" uid="uid://ljsnx8ikks2d" path="res://scenes/world_environment.tscn" id="1_2hxtt"]
+[ext_resource type="PackedScene" uid="uid://ym40dtjh3xj3" path="res://Player/player_small_jumping.tscn" id="2_vtvyu"]
+[ext_resource type="PackedScene" uid="uid://35vtn3rs07kk" path="res://scenes/level_goal.tscn" id="3_lgome"]
+[ext_resource type="Script" path="res://scenes/testsound.gd" id="4_wqo68"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jeyfs"]
 albedo_color = Color(0, 1, 0, 1)
@@ -15,30 +15,34 @@ transform = Transform3D(-0.866025, -0.440652, 0.236275, 0, 0.472551, 0.881303, -
 light_color = Color(0.662745, 0.776471, 1, 1)
 shadow_enabled = true
 
-[node name="WorldEnvironment" parent="." instance=ExtResource("1_041e8")]
+[node name="WorldEnvironment" parent="." instance=ExtResource("1_2hxtt")]
 
-[node name="player" parent="." instance=ExtResource("1_fugmr")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0691147, 0.000123476, 0.0172631)
+[node name="PlayerSmallJumping" parent="." instance=ExtResource("2_vtvyu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.42277, 0.000123478, 0)
+velocity = Vector3(0, 0, 0)
+
+[node name="PlayerSmallJumping2" parent="." instance=ExtResource("2_vtvyu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.421496, 0, 0)
 velocity = Vector3(0, 0, 0)
 user_controlled = true
 
-[node name="LevelGoal" parent="." instance=ExtResource("3_1d2ny")]
+[node name="LevelGoal" parent="." instance=ExtResource("3_lgome")]
 transform = Transform3D(0.999994, -0.0035081, 0, 0.0035081, 0.999994, 0, 0, 0, 1, 6.18346, -0.102097, 0)
 
 [node name="Environment" type="Node3D" parent="."]
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Environment"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.2774, -0.75, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.35775, -0.75, 0)
 use_collision = true
-size = Vector3(7.55481, 1, 1)
+size = Vector3(11.3941, 1, 1)
 
 [node name="CSGBox3D4" type="CSGBox3D" parent="Environment"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.2774, 2.61498, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.33116, 2.61498, 0)
 use_collision = true
-size = Vector3(7.55481, 1, 1)
+size = Vector3(11.4473, 1, 1)
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="Environment"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.16689, 0.934814, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.02404, 0.934814, 0)
 use_collision = true
 size = Vector3(1.31873, 4.36963, 1)
 
@@ -47,19 +51,20 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.7266, 0.934814, 0)
 use_collision = true
 size = Vector3(1.31873, 4.36963, 1)
 
+[node name="CSGBox3D5" type="CSGBox3D" parent="Environment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.489746, 0)
+use_collision = true
+size = Vector3(1.25, 1.47949, 1)
+
 [node name="SoundEmitter" type="AkEvent3D" parent="."]
 event = {
 "id": 889841071,
 "name": "FilterSweepLoop"
 }
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -643.549, 1.10798, -456.057)
-script = ExtResource("4_gnr5d")
+script = ExtResource("4_wqo68")
 
 [node name="Timer" type="Timer" parent="SoundEmitter"]
-wait_time = 3.0
-autostart = true
-
-[node name="Timer2" type="Timer" parent="SoundEmitter"]
 wait_time = 3.0
 autostart = true
 

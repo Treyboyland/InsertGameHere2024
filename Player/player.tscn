@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cd417q0757gie"]
+[gd_scene load_steps=3 format=3 uid="uid://cd417q0757gie"]
 
 [ext_resource type="Script" path="res://Player/Player.gd" id="1_3qj8j"]
+[ext_resource type="PackedScene" uid="uid://cq2tmiy2nv4oo" path="res://Player/spark_radius.tscn" id="2_0yyjt"]
 
 [node name="player" type="CharacterBody3D" groups=["Player"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0723877)
@@ -15,3 +16,5 @@ fov = 27.6
 
 [node name="AkListener3D" type="AkListener3D" parent="Camera3D"]
 transform = Transform3D(1, 0, 0, 0, 0.258819, -0.965926, 0, 0.965926, 0.258819, 0, 0.0090301, -11.2216)
+
+[node name="SparkRadius" parent="." instance=ExtResource("2_0yyjt")]

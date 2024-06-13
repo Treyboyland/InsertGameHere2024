@@ -12,14 +12,13 @@ func _process(delta: float) -> void:
 
 
 func _on_area_entered(area: Area3D) -> void:
-	print("AAHHHHH")
-	if area.is_in_group("Player"):
-		# We should probably do some fanfare first, but we shall go to the next level
-		Global.go_to_next_level()
+	do_game_completion(area)
 
 
 func _on_body_entered(body: Node3D) -> void:
-	print("AAHHHHH")
-	if body.is_in_group("Player"):
+	do_game_completion(body)
+
+func do_game_completion(node: Node) -> void:
+	if(node.is_in_group("Player")):
 		# We should probably do some fanfare first, but we shall go to the next level
 		Global.go_to_next_level()
