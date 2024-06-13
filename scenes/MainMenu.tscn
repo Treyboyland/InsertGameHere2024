@@ -1,0 +1,77 @@
+[gd_scene load_steps=3 format=3 uid="uid://ch7ujwl3nfjej"]
+
+[ext_resource type="Script" path="res://scenes/MainMenu.gd" id="1_lhajy"]
+[ext_resource type="PackedScene" uid="uid://dx7m04thqbevv" path="res://scenes/level_button.tscn" id="1_wihwh"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lhajy")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 54.435
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 64
+text = "Level Select"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 96.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 150.0
+grow_horizontal = 2
+theme_override_constants/separation = 15
+alignment = 1
+
+[node name="InitialLevelButton" parent="Control/HBoxContainer" instance=ExtResource("1_wihwh")]
+layout_mode = 2
+focus_neighbor_left = NodePath("../LevelButton7")
+focus_neighbor_right = NodePath("../LevelButton2")
+
+[node name="LevelButton2" parent="Control/HBoxContainer" instance=ExtResource("1_wihwh")]
+layout_mode = 2
+focus_neighbor_left = NodePath("../InitialLevelButton")
+focus_neighbor_right = NodePath("../LevelButton3")
+level_index = 1
+
+[node name="LevelButton3" parent="Control/HBoxContainer" instance=ExtResource("1_wihwh")]
+layout_mode = 2
+level_index = 2
+
+[node name="LevelButton4" parent="Control/HBoxContainer" instance=ExtResource("1_wihwh")]
+layout_mode = 2
+focus_neighbor_left = NodePath("../LevelButton3")
+focus_neighbor_right = NodePath("../LevelButton5")
+level_index = 3
+
+[node name="LevelButton5" parent="Control/HBoxContainer" instance=ExtResource("1_wihwh")]
+layout_mode = 2
+level_index = 4
+
+[node name="LevelButton6" parent="Control/HBoxContainer" instance=ExtResource("1_wihwh")]
+layout_mode = 2
+focus_neighbor_left = NodePath("../LevelButton5")
+focus_neighbor_right = NodePath("../LevelButton7")
+level_index = 5
+
+[node name="LevelButton7" parent="Control/HBoxContainer" instance=ExtResource("1_wihwh")]
+layout_mode = 2
+level_index = 6

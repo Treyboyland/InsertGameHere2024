@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://ym40dtjh3xj3"]
+
+[ext_resource type="Script" path="res://Player/Player.gd" id="1_d7d3o"]
+[ext_resource type="PackedScene" uid="uid://cq2tmiy2nv4oo" path="res://Player/spark_radius.tscn" id="2_mefed"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_f4cn8"]
+size = Vector3(0.5, 0.5, 0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_863ve"]
+albedo_color = Color(0, 1, 0, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xfkau"]
+size = Vector3(0.5, 0.5, 0.5)
+
+[node name="PlayerSmallJumping" type="CharacterBody3D" groups=["Player"]]
+velocity = Vector3(0, -101.756, 0)
+script = ExtResource("1_d7d3o")
+SPEED = 5.0
+JUMP_VELOCITY = 5.0
+user_controlled = false
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, -7.62905e-11, -1.94519e-13, 7.62907e-11, 0.999994, 0.00343763, -6.77404e-14, -0.00343763, 0.999994, 0.00753284, 0.722702, 19.1673)
+current = true
+fov = 27.6
+
+[node name="AkListener3D" type="AkListener3D" parent="Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 0.258819, -0.965926, 0, 0.965926, 0.258819, 0, 0.0090301, -11.2216)
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="."]
+mesh = SubResource("BoxMesh_f4cn8")
+material = SubResource("StandardMaterial3D_863ve")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_xfkau")
+
+[node name="SparkRadius" parent="." instance=ExtResource("2_mefed")]

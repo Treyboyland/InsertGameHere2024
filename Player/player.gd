@@ -1,10 +1,11 @@
 @tool
-class_name Player
+class_name PlayerCharacter
 extends CharacterBody3D
 
 
 @export var SPEED = 3.0
 @export var JUMP_VELOCITY = 4.5
+## True in order to enable player movement and gravity (will cause the player to fall in editor)
 @export var user_controlled: bool = true
 @export var alive:bool = true
 @onready var camera_3d = get_node("Camera3D")
@@ -16,7 +17,7 @@ func _ready():
 	pass
 
 func _physics_process(delta):
-	if user_controlled:
+	if user_controlled and Global.can_player_move:
 		handle_input(delta)
 	# Add the gravity.
 func handle_input(delta):
@@ -25,12 +26,12 @@ func handle_input(delta):
 		velocity.y -= gravity * delta
 
 	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+	if Input.is_action_just_pressed("player_jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
-	var input_dir = Input.get_axis("ui_left", "ui_right")
+	var input_dir = Input.get_axis("player_left", "player_right")
 	var direction = (transform.basis * Vector3(input_dir, 0, 0)).normalized()
 	if direction:
 		velocity.x = direction.x * SPEED
