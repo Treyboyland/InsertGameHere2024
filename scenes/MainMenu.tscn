@@ -75,3 +75,49 @@ level_index = 5
 [node name="LevelButton7" parent="Control/HBoxContainer" instance=ExtResource("1_wihwh")]
 layout_mode = 2
 level_index = 6
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 170.0
+offset_bottom = 320.0
+grow_horizontal = 2
+theme_override_constants/separation = 15
+alignment = 1
+
+[node name="LevelButton8" parent="Control/HBoxContainer2" instance=ExtResource("1_wihwh")]
+layout_mode = 2
+focus_neighbor_left = NodePath("../LevelButton14")
+focus_neighbor_right = NodePath("../LevelButton9")
+level_index = 7
+
+[node name="LevelButton9" parent="Control/HBoxContainer2" instance=ExtResource("1_wihwh")]
+layout_mode = 2
+focus_neighbor_left = NodePath("../LevelButton8")
+focus_neighbor_right = NodePath("../LevelButton10")
+level_index = 8
+
+[node name="LevelButton10" parent="Control/HBoxContainer2" instance=ExtResource("1_wihwh")]
+layout_mode = 2
+level_index = 9
+
+[node name="LevelButton11" parent="Control/HBoxContainer2" instance=ExtResource("1_wihwh")]
+layout_mode = 2
+focus_neighbor_left = NodePath("../LevelButton10")
+focus_neighbor_right = NodePath("../LevelButton12")
+level_index = 10
+
+[node name="LevelButton12" parent="Control/HBoxContainer2" instance=ExtResource("1_wihwh")]
+layout_mode = 2
+level_index = 11
+
+[node name="LevelButton13" parent="Control/HBoxContainer2" instance=ExtResource("1_wihwh")]
+layout_mode = 2
+focus_neighbor_left = NodePath("../LevelButton12")
+focus_neighbor_right = NodePath("../LevelButton14")
+level_index = 12
+
+[node name="LevelButton14" parent="Control/HBoxContainer2" instance=ExtResource("1_wihwh")]
+layout_mode = 2
+level_index = 13

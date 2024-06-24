@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://sbjus8eeoo7k"]
+
+[ext_resource type="Script" path="res://scenes/objects/door.gd" id="1_6rl0j"]
+
+[node name="Door" type="Node3D"]
+script = ExtResource("1_6rl0j")
+
+[node name="DoorBlocker" type="CSGBox3D" parent="."]
+use_collision = true
+size = Vector3(0.394043, 2.84375, 1)
