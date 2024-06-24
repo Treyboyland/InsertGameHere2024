@@ -17,3 +17,6 @@ mono_crash.*.json
 
 # Temp files
 *.tmp
+
+# Game Release Folder
+[Rr]elease
