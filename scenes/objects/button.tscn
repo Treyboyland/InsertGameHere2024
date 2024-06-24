@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://cu0srvelym68x"]
+
+[ext_resource type="Script" path="res://scenes/objects/button.gd" id="1_ds6m3"]
+[ext_resource type="Material" uid="uid://dtoy3pmtprwff" path="res://scenes/objects/button_on.tres" id="2_l8w7t"]
+[ext_resource type="Material" uid="uid://dqfq5707kf0un" path="res://scenes/objects/button_off.tres" id="3_jv01r"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vbpji"]
+albedo_color = Color(0.231373, 0.231373, 0.231373, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uqnga"]
+size = Vector3(0.19043, 0.158844, 0.232178)
+
+[node name="Button" type="Node3D"]
+script = ExtResource("1_ds6m3")
+on_material = ExtResource("2_l8w7t")
+off_material = ExtResource("3_jv01r")
+
+[node name="ButtonBase" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0959473, 0)
+material_override = SubResource("StandardMaterial3D_vbpji")
+size = Vector3(0.25, 0.0581055, 0.25)
+
+[node name="ButtonTop" type="CSGCylinder3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.00653008, 0)
+material_override = ExtResource("3_jv01r")
+radius = 0.0948915
+height = 0.134763
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("BoxShape3D_uqnga")
+
+[connection signal="body_entered" from="Area3D" to="." method="checkForPlayerEnter"]
+[connection signal="body_exited" from="Area3D" to="." method="checkForPlayerExit"]

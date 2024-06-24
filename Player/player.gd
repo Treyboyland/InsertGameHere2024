@@ -41,3 +41,7 @@ func handle_input(delta):
 		
 	velocity.z = 0;
 	move_and_slide()
+	
+func kill():
+	alive = false
+	user_controlled = false
