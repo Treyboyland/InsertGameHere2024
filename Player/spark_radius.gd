@@ -27,23 +27,28 @@ func attemptSwap():
 		otherPlayer.user_controlled = true
 		Global.seconds_since_last_swap = 0
 	elif Global.seconds_since_last_swap < secondsBetweenSwaps:
-		print ("Spark time not reached")
+		#print ("Spark time not reached")
+		pass
 	elif player == null:
-		print ("Player is null")
+		#print ("Player is null")
+		pass
 	elif not player.user_controlled:
-		print ("Spark not active")
+		#print ("Spark not active")
+		pass
 	elif otherPlayer == null:
-		print ("Other player null")
+		#print ("Other player null")
+		pass
 	
 
 func _on_body_entered(body: Node3D) -> void:
 	if not (player is PlayerCharacter) or not player.user_controlled:
 		pass
 	if body.is_in_group("Player") and not (body == player):
-		print("Body player and not self")
+		#print("Body player and not self")
 		otherPlayer = body
 	else:
-		print("Body not player")
+		#print("Body not player")
+		pass
 
 
 func _on_body_exited(body: Node3D) -> void:
