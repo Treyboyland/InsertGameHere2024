@@ -17,13 +17,14 @@ namespace AK
         static const AkUniqueID PLACEHOLDERBEEP = 1847609664U;
         static const AkUniqueID PLAYTESTSOUND = 2260221316U;
         static const AkUniqueID STRUMS = 3473747615U;
+        static const AkUniqueID WIND = 1537061107U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID DUMMY = 4079084883U;
         static const AkUniqueID PANNING = 1820302072U;
-        static const AkUniqueID WINDFREQ = 3571474009U;
+        static const AkUniqueID WINDINTENSITY = 1042517418U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

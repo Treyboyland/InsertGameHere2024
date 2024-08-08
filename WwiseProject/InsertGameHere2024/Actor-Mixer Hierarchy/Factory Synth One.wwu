@@ -15278,6 +15278,9 @@ Content provided by Vincent Gagnon
 					</ChildrenList>
 				</Folder>
 				<Sound Name="WindSynth" ID="{4F2126C8-548C-4F42-9620-D349DC2657B3}" ShortID="9391603">
+					<PropertyList>
+						<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72A2E9F5-390E-4F2F-8B2F-533E5E63D3B0}"/>
@@ -15342,6 +15345,14 @@ Content provided by Vincent Gagnon
 							<Language>SFX</Language>
 						</SourcePlugin>
 					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{678F8BE4-8306-49D7-982F-F48F2F7BDE07}">
+							<PropertyList>
+								<Property Name="PanX" Type="Real64" Value="-100"/>
+								<Property Name="PanY" Type="Real64" Value="-0.37593984962406"/>
+							</PropertyList>
+						</Panner>
+					</PositioningInfo>
 					<ObjectLists>
 						<ObjectList Name="Effects">
 							<Reference>
@@ -15360,7 +15371,7 @@ Content provided by Vincent Gagnon
 									<EffectSlot Name="" ID="{E08DB961-B4D1-4869-8EC0-56740337418A}" ShortID="411970109">
 										<ReferenceList>
 											<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-												<ObjectRef Name="Low_Pass_20KHz" ID="{830124FB-B9D5-4AE8-846E-E94A74652666}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												<ObjectRef Name="High_Pass_230hz" ID="{02222D6E-DBDE-4D3C-BC32-9CB15119A3FD}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 											</Reference>
 										</ReferenceList>
 									</EffectSlot>
@@ -15370,6 +15381,112 @@ Content provided by Vincent Gagnon
 					</ObjectLists>
 					<ActiveSourceList>
 						<ActiveSource Name="Synth One" ID="{2E49B2AE-77CD-497B-B651-71148528BA26}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="WindSynth_01" ID="{AA007B4B-496A-4604-94D9-6D285A40F32D}" ShortID="889207136">
+					<PropertyList>
+						<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{72A2E9F5-390E-4F2F-8B2F-533E5E63D3B0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Wind" ID="{F4AEBFEE-BCD2-4A0A-8BDA-0E0AB1B3EFC6}" WorkUnitID="{87F58A71-6DB3-4AD1-BD93-A282A2303D9F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SourcePlugin Name="Synth One" ID="{0BD0406F-A63F-496F-AC7C-7AE8628688F9}" ShortID="287900309" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+							<PropertyList>
+								<Property Name="BaseFrequency" Type="Real32" Value="706"/>
+								<Property Name="NoiseLevel" Type="Real32" Value="-5"/>
+								<Property Name="Osc1Level" Type="Real32" Value="-96"/>
+								<Property Name="Osc2Level" Type="Real32" Value="-96"/>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{36426E0A-41C4-4AE8-9CD6-A508989320D0}" ShortID="765910414">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="OutputLevel"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<Custom>
+															<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{FFE7B235-6AA5-4865-B0A6-09BAF8A5490B}" ShortID="288269281">
+																<PropertyList>
+																	<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																</PropertyList>
+															</ModulatorEnvelope>
+														</Custom>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{E7A19CEF-0F28-4FDB-B5A6-5725EAA53815}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-96</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<Language>SFX</Language>
+						</SourcePlugin>
+					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{DF7A584F-A06A-4024-A4E2-8DD21AA0695E}">
+							<PropertyList>
+								<Property Name="PanX" Type="Real64" Value="100"/>
+								<Property Name="PanY" Type="Real64" Value="1.11022302462516E-16"/>
+							</PropertyList>
+						</Panner>
+					</PositioningInfo>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{E78E3F64-5A09-4918-9391-6625C19EB55A}" ShortID="562201425">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+												<ObjectRef Name="Single_Band_1Khz_Wide" ID="{9B6A1D1B-F90F-4EAC-B796-2943413957FE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{4B69123C-0304-4EE4-8BE6-576DCE53E4B4}" ShortID="721215298">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+												<ObjectRef Name="High_Pass_230hz" ID="{02222D6E-DBDE-4D3C-BC32-9CB15119A3FD}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+					<ActiveSourceList>
+						<ActiveSource Name="Synth One" ID="{0BD0406F-A63F-496F-AC7C-7AE8628688F9}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

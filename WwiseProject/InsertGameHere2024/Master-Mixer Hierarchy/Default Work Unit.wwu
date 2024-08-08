@@ -25,7 +25,7 @@
 														</Property>
 														<Property Name="BusVolume" Type="Real64">
 															<ValueList>
-																<Value>-4</Value>
+																<Value>1</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -56,6 +56,7 @@
 																							<Property Name="Density" Type="Real32" Value="100"/>
 																							<Property Name="Diffusion" Type="Real32" Value="53"/>
 																							<Property Name="DryLevel" Type="Real32" Value="0"/>
+																							<Property Name="ERLevel" Type="Real32" Value="-34"/>
 																							<Property Name="ERPattern" Type="int32" Value="29"/>
 																							<Property Name="EnableToneControls" Type="bool" Value="True"/>
 																							<Property Name="Filter1Freq" Type="Real32" Value="250"/>
@@ -68,10 +69,86 @@
 																							<Property Name="HFDamping" Type="Real32" Value="7.05"/>
 																							<Property Name="PreDelay" Type="Real32" Value="200"/>
 																							<Property Name="Quality" Type="int32" Value="6"/>
-																							<Property Name="ReverbLevel" Type="Real32" Value="-10"/>
+																							<Property Name="ReverbLevel" Type="Real32" Value="-19"/>
 																							<Property Name="RoomShape" Type="Real32" Value="81"/>
 																							<Property Name="RoomSize" Type="Real32" Value="100"/>
 																						</PropertyList>
+																						<ObjectLists>
+																							<ObjectList Name="RTPC">
+																								<Reference>
+																									<Local>
+																										<RTPC Name="" ID="{4BAA6BC2-BD2E-45CE-8B83-924CD1CAFA5B}" ShortID="410434592">
+																											<PropertyList>
+																												<Property Name="PropertyName" Type="string" Value="ReverbLevel"/>
+																											</PropertyList>
+																											<ReferenceList>
+																												<Reference Name="ControlInput">
+																													<ObjectRef Name="WindIntensity" ID="{4B7FF2D2-CC2A-4917-8173-1F9D8538A0EF}" WorkUnitID="{5263B37A-45E1-4243-A77E-918CC7E234CF}"/>
+																												</Reference>
+																												<Reference Name="Curve">
+																													<Custom>
+																														<Curve Name="" ID="{187942EA-5A99-47E8-A6EF-8FC9FD170844}">
+																															<PropertyList>
+																																<Property Name="Flags" Type="int32" Value="3"/>
+																															</PropertyList>
+																															<PointList>
+																																<Point>
+																																	<XPos>0</XPos>
+																																	<YPos>-96.3</YPos>
+																																	<Flags>5</Flags>
+																																	<SegmentShape>Log3</SegmentShape>
+																																</Point>
+																																<Point>
+																																	<XPos>100</XPos>
+																																	<YPos>0</YPos>
+																																	<Flags>37</Flags>
+																																</Point>
+																															</PointList>
+																														</Curve>
+																													</Custom>
+																												</Reference>
+																											</ReferenceList>
+																										</RTPC>
+																									</Local>
+																								</Reference>
+																								<Reference>
+																									<Local>
+																										<RTPC Name="" ID="{0B0B82AA-2730-4E8E-AB72-EE31A19A3543}" ShortID="812103019">
+																											<PropertyList>
+																												<Property Name="PropertyName" Type="string" Value="ERLevel"/>
+																											</PropertyList>
+																											<ReferenceList>
+																												<Reference Name="ControlInput">
+																													<ObjectRef Name="WindIntensity" ID="{4B7FF2D2-CC2A-4917-8173-1F9D8538A0EF}" WorkUnitID="{5263B37A-45E1-4243-A77E-918CC7E234CF}"/>
+																												</Reference>
+																												<Reference Name="Curve">
+																													<Custom>
+																														<Curve Name="" ID="{A2444BE5-F6C1-45B0-8E98-A81D2DDD045E}">
+																															<PropertyList>
+																																<Property Name="Flags" Type="int32" Value="3"/>
+																															</PropertyList>
+																															<PointList>
+																																<Point>
+																																	<XPos>0</XPos>
+																																	<YPos>-96.3</YPos>
+																																	<Flags>5</Flags>
+																																	<SegmentShape>Log3</SegmentShape>
+																																</Point>
+																																<Point>
+																																	<XPos>100</XPos>
+																																	<YPos>0</YPos>
+																																	<Flags>37</Flags>
+																																</Point>
+																															</PointList>
+																														</Curve>
+																													</Custom>
+																												</Reference>
+																											</ReferenceList>
+																										</RTPC>
+																									</Local>
+																								</Reference>
+																							</ObjectList>
+																						</ObjectLists>
 																					</Effect>
 																				</Custom>
 																			</Reference>
@@ -89,11 +166,6 @@
 																				</ValueList>
 																			</Property>
 																		</PropertyList>
-																		<ReferenceList>
-																			<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-																				<ObjectRef Name="Space_Garage" ID="{1AF92D84-49DD-4BBC-8F29-6C6D10082B6E}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-																			</Reference>
-																		</ReferenceList>
 																	</EffectSlot>
 																</Local>
 															</Reference>
@@ -133,8 +205,140 @@
 																							<Property Name="AttackTime" Type="Real32" Value="0"/>
 																							<Property Name="Ratio" Type="Real32" Value="2.5"/>
 																							<Property Name="ReleaseTime" Type="Real32" Value="0.46"/>
-																							<Property Name="Threshold" Type="Real32" Value="-24.9"/>
+																							<Property Name="Threshold" Type="Real32" Value="-25.9"/>
 																						</PropertyList>
+																					</Effect>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</EffectSlot>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<EffectSlot Name="" ID="{7654BDD2-CF0B-4B35-B64C-2D3FA67155D7}" ShortID="1005631251">
+																		<ReferenceList>
+																			<Reference Name="Effect">
+																				<Custom>
+																					<Effect Name="Parametric EQ (Custom)" ID="{41938935-0C05-4BE6-80A1-EC86CAA99ED9}" ShortID="33408217" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																						<PropertyList>
+																							<Property Name="FilterTypeBand1" Type="int32" Value="0"/>
+																							<Property Name="FilterTypeBand2" Type="int32" Value="1"/>
+																							<Property Name="FrequencyBand1" Type="Real32" Value="20000"/>
+																							<Property Name="FrequencyBand2" Type="Real32" Value="20"/>
+																							<Property Name="OnOffBand3" Type="bool" Value="False"/>
+																						</PropertyList>
+																						<ObjectLists>
+																							<ObjectList Name="RTPC">
+																								<Reference>
+																									<Local>
+																										<RTPC Name="" ID="{EE1CBDBE-BDBE-4630-ADCB-F996BAD33002}" ShortID="808312922">
+																											<PropertyList>
+																												<Property Name="PropertyName" Type="string" Value="FrequencyBand1"/>
+																											</PropertyList>
+																											<ReferenceList>
+																												<Reference Name="ControlInput">
+																													<ObjectRef Name="WindIntensity" ID="{4B7FF2D2-CC2A-4917-8173-1F9D8538A0EF}" WorkUnitID="{5263B37A-45E1-4243-A77E-918CC7E234CF}"/>
+																												</Reference>
+																												<Reference Name="Curve">
+																													<Custom>
+																														<Curve Name="" ID="{5EBAFB5C-3D7F-4027-B02D-30C58251C0A2}">
+																															<PropertyList>
+																																<Property Name="Flags" Type="int32" Value="5"/>
+																															</PropertyList>
+																															<PointList>
+																																<Point>
+																																	<XPos>0</XPos>
+																																	<YPos>117.46401</YPos>
+																																	<Flags>5</Flags>
+																																	<SegmentShape>Log2</SegmentShape>
+																																</Point>
+																																<Point>
+																																	<XPos>100</XPos>
+																																	<YPos>20000</YPos>
+																																	<Flags>37</Flags>
+																																</Point>
+																															</PointList>
+																														</Curve>
+																													</Custom>
+																												</Reference>
+																											</ReferenceList>
+																										</RTPC>
+																									</Local>
+																								</Reference>
+																								<Reference>
+																									<Local>
+																										<RTPC Name="" ID="{7D54AB93-C2B3-4C02-8CD7-AB5F4296FEE6}" ShortID="87603823">
+																											<PropertyList>
+																												<Property Name="PropertyName" Type="string" Value="FrequencyBand2"/>
+																											</PropertyList>
+																											<ReferenceList>
+																												<Reference Name="ControlInput">
+																													<ObjectRef Name="WindIntensity" ID="{4B7FF2D2-CC2A-4917-8173-1F9D8538A0EF}" WorkUnitID="{5263B37A-45E1-4243-A77E-918CC7E234CF}"/>
+																												</Reference>
+																												<Reference Name="Curve">
+																													<Custom>
+																														<Curve Name="" ID="{398C98FB-8F64-4299-AB91-0F6FAE37C340}">
+																															<PropertyList>
+																																<Property Name="Flags" Type="int32" Value="5"/>
+																															</PropertyList>
+																															<PointList>
+																																<Point>
+																																	<XPos>0</XPos>
+																																	<YPos>169.27634</YPos>
+																																	<Flags>5</Flags>
+																																</Point>
+																																<Point>
+																																	<XPos>100</XPos>
+																																	<YPos>20</YPos>
+																																	<Flags>37</Flags>
+																																</Point>
+																															</PointList>
+																														</Curve>
+																													</Custom>
+																												</Reference>
+																											</ReferenceList>
+																										</RTPC>
+																									</Local>
+																								</Reference>
+																								<Reference>
+																									<Local>
+																										<RTPC Name="" ID="{9325C755-E89E-45DC-968D-EC839BE4DB69}" ShortID="844398488">
+																											<PropertyList>
+																												<Property Name="PropertyName" Type="string" Value="OutputLevel"/>
+																											</PropertyList>
+																											<ReferenceList>
+																												<Reference Name="ControlInput">
+																													<ObjectRef Name="WindIntensity" ID="{4B7FF2D2-CC2A-4917-8173-1F9D8538A0EF}" WorkUnitID="{5263B37A-45E1-4243-A77E-918CC7E234CF}"/>
+																												</Reference>
+																												<Reference Name="Curve">
+																													<Custom>
+																														<Curve Name="" ID="{304B1270-7971-4F9B-A25D-38942D62296E}">
+																															<PropertyList>
+																																<Property Name="Flags" Type="int32" Value="3"/>
+																															</PropertyList>
+																															<PointList>
+																																<Point>
+																																	<XPos>0</XPos>
+																																	<YPos>-12.82018</YPos>
+																																	<Flags>5</Flags>
+																																	<SegmentShape>Log2</SegmentShape>
+																																</Point>
+																																<Point>
+																																	<XPos>100</XPos>
+																																	<YPos>0</YPos>
+																																	<Flags>37</Flags>
+																																</Point>
+																															</PointList>
+																														</Curve>
+																													</Custom>
+																												</Reference>
+																											</ReferenceList>
+																										</RTPC>
+																									</Local>
+																								</Reference>
+																							</ObjectList>
+																						</ObjectLists>
 																					</Effect>
 																				</Custom>
 																			</Reference>

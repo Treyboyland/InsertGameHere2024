@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{22FDC261-60F9-4CD2-98AF-46DAC6E2DA7A}" SchemaVersion="119">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{22FDC261-60F9-4CD2-98AF-46DAC6E2DA7A}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{22FDC261-60F9-4CD2-98AF-46DAC6E2DA7A}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="WindTestSession" ID="{EC2FBF83-E32F-4782-ACD4-321776637A18}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Wind" ID="{544ACF71-AA48-4A9E-BC6E-AC3576E63172}" WorkUnitID="{9D145DA0-5074-4D05-B3FB-3E0F44772ACD}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="WindIntensity" ID="{4B7FF2D2-CC2A-4917-8173-1F9D8538A0EF}"/>
+							<Value>100</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

@@ -3,15 +3,17 @@ class_name AK
 class EVENTS:
 
 	const PLAYTESTSOUND = 2260221316
-	const PLACEHOLDERBEEP = 1847609664
-	const STRUMS = 3473747615
 	const FILTERSWEEPLOOP = 889841071
+	const STRUMS = 3473747615
+	const PLACEHOLDERBEEP = 1847609664
+	const WIND = 1537061107
 
 	const _dict = {
 		"PlayTestSound": PLAYTESTSOUND,
-		"PlaceHolderBeep": PLACEHOLDERBEEP,
+		"FilterSweepLoop": FILTERSWEEPLOOP,
 		"Strums": STRUMS,
-		"FilterSweepLoop": FILTERSWEEPLOOP
+		"PlaceHolderBeep": PLACEHOLDERBEEP,
+		"Wind": WIND
 	}
 
 class STATES:
@@ -24,12 +26,14 @@ class SWITCHES:
 
 class GAME_PARAMETERS:
 
-	const PANNING = 1820302072
 	const DUMMY = 4079084883
+	const PANNING = 1820302072
+	const WINDINTENSITY = 1042517418
 
 	const _dict = {
+		"Dummy": DUMMY,
 		"Panning": PANNING,
-		"Dummy": DUMMY
+		"WindIntensity": WINDINTENSITY
 	}
 
 class TRIGGERS:
@@ -49,9 +53,17 @@ class BANKS:
 class BUSSES:
 
 	const MASTER_AUDIO_BUS = 3803692087
+	const WIND = 1537061107
+	const WORLD = 2609808943
+	const AMBIENT = 77978275
+	const SFX = 393239870
 
 	const _dict = {
-		"Master Audio Bus": MASTER_AUDIO_BUS
+		"Master Audio Bus": MASTER_AUDIO_BUS,
+		"Wind": WIND,
+		"World": WORLD,
+		"Ambient": AMBIENT,
+		"SFX": SFX
 	}
 
 class AUX_BUSSES:
@@ -60,12 +72,12 @@ class AUX_BUSSES:
 
 class AUDIO_DEVICES:
 
-	const SYSTEM = 3859886410
 	const NO_OUTPUT = 2317455096
+	const SYSTEM = 3859886410
 
 	const _dict = {
-		"System": SYSTEM,
-		"No_Output": NO_OUTPUT
+		"No_Output": NO_OUTPUT,
+		"System": SYSTEM
 	}
 
 class EXTERNAL_SOURCES:

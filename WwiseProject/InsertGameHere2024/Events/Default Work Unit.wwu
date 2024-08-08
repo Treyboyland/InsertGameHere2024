@@ -56,6 +56,13 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{495F11F1-7275-4087-81C5-B510DAB1FD22}" ShortID="1024799381">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WindSynth_01" ID="{AA007B4B-496A-4604-94D9-6D285A40F32D}" WorkUnitID="{D9329DB3-E4D7-45AA-BD40-6EB28C6C4D39}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 			</ChildrenList>

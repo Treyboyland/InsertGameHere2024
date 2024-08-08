@@ -8,6 +8,7 @@
 						<ObjectRef Name="PlayTestSound" ID="{0E0909DB-E47F-4121-A638-1431CDF08882}" WorkUnitID="{9D145DA0-5074-4D05-B3FB-3E0F44772ACD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlaceHolderBeep" ID="{0103A4B5-A9A1-45A2-ADE6-46BDCE6B80C9}" WorkUnitID="{9D145DA0-5074-4D05-B3FB-3E0F44772ACD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="FilterSweepLoop" ID="{C1F4802A-53F8-46F7-AD2D-0D84E8EDD283}" WorkUnitID="{9D145DA0-5074-4D05-B3FB-3E0F44772ACD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Wind" ID="{544ACF71-AA48-4A9E-BC6E-AC3576E63172}" WorkUnitID="{9D145DA0-5074-4D05-B3FB-3E0F44772ACD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Strums" ID="{60FD039A-CB9B-4B45-8EF8-89393D760D8E}" WorkUnitID="{9D145DA0-5074-4D05-B3FB-3E0F44772ACD}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

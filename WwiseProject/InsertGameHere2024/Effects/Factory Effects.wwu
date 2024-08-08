@@ -591,6 +591,14 @@
 										<Property Name="OnOffBand3" Type="bool" Value="False"/>
 									</PropertyList>
 								</Effect>
+								<Effect Name="High_Pass_230hz" ID="{02222D6E-DBDE-4D3C-BC32-9CB15119A3FD}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<PropertyList>
+										<Property Name="FilterTypeBand3" Type="int32" Value="1"/>
+										<Property Name="FrequencyBand3" Type="Real32" Value="315"/>
+										<Property Name="OnOffBand1" Type="bool" Value="False"/>
+										<Property Name="OnOffBand2" Type="bool" Value="False"/>
+									</PropertyList>
+								</Effect>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Misc" ID="{151A02CB-142F-4755-B709-77FF2A7A16BD}" ShortID="1004187057">

@@ -128,6 +128,69 @@
 					<PropertyList>
 						<Property Name="LfoFrequency" Type="Real64" Value="0.086"/>
 					</PropertyList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{64D29163-A481-4150-BC65-250FA8384D14}" ShortID="924624068">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="LfoFrequency"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="WindResFreqSubLFO" ID="{43D58E6A-3BA9-4606-A781-C32693C79BF8}" WorkUnitID="{6A6B94A7-F6EE-4923-B2F2-1F25D8EEF08B}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{C631607C-8420-414C-BBE4-964D9DF69031}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="5"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0.03103</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0.08609</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</ModulatorLfo>
+				<ModulatorLfo Name="WindResFreqSubLFO" ID="{43D58E6A-3BA9-4606-A781-C32693C79BF8}" ShortID="681926734">
+					<PropertyList>
+						<Property Name="LfoFrequency" Type="Real64" Value="0.04">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{2CF8750C-D791-47E3-8FE7-9C5C39315E1F}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="LfoInitialPhase" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{F115EA14-E438-4365-9CA9-B0816BF92714}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="360"/>
+											<Property Name="Min" Type="Real64" Value="-360"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
 				</ModulatorLfo>
 			</ChildrenList>
 		</WorkUnit>

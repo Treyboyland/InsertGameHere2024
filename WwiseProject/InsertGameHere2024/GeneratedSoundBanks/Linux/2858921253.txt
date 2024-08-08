@@ -1,11 +1,30 @@
 Event	ID	Name			Wwise Object Path	Notes
 	889841071	FilterSweepLoop			\Default Work Unit\FilterSweepLoop	
+	1537061107	Wind			\Default Work Unit\Wind	
 	1847609664	PlaceHolderBeep			\Default Work Unit\PlaceHolderBeep	
 	2260221316	PlayTestSound			\Default Work Unit\PlayTestSound	
 	3473747615	Strums			\Default Work Unit\Strums	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1820302072	Panning			\Default Work Unit\Panning	
+
+Modulator LFO	ID	Name			Wwise Object Path	Notes
+	127156305	WindFreqLFO			\Default Work Unit\WindFreqLFO	
+	420874507	LFOFreqLFO			\Default Work Unit\LFOFreqLFO	
+	681926734	WindResFreqSubLFO			\Default Work Unit\WindResFreqSubLFO	
+	990504295	WindResonanceLFO			\Default Work Unit\WindResonanceLFO	
+
+Modulator Envelope	ID	Name			Wwise Object Path	Notes
+	288269281	Modulator Envelope (Custom)				
+	311592313	Modulator Envelope (Custom)				
+
+Effect plug-ins	ID	Name	Type				Notes
+	2376980951	High_Pass_230hz	Wwise Parametric EQ			
+	2667647788	Single_Band_1Khz_Wide	Wwise Parametric EQ			
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	40290382	Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Factory Synth One\WindSynth\Synth One	
+	287900309	Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Factory Synth One\WindSynth_01\Synth One	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	54259996	Strum3Mono	F:\GodotProjects\InsertGameHere2024\WwiseProject\InsertGameHere2024\.cache\Linux\SFX\Strum3Mono_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\InternalDevStuff\Strums\Strum3Mono		705698

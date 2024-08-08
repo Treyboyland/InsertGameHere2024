@@ -9,19 +9,17 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{7AAABA63-DDC9-D9A6-EDFB-B7C67B36A5A8}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{224C23AF-1B4A-7EC2-2DA7-2E4503CA5BED}">
 			<ShortName>Init</ShortName>
 			<Path>1355168291.bnk</Path>
 			<Plugins>
 				<Custom>
+					<Plugin Id="33408217" Name="Parametric EQ (Custom)" LibName="Wwise Parametric EQ" LibId="6881283"/>
 					<Plugin Id="59998620" Name="Meter (Custom)" LibName="Wwise Meter" LibId="8454147"/>
 					<Plugin Id="287204507" Name="Compressor (Custom)" LibName="Wwise Compressor" LibId="7077891"/>
 					<Plugin Id="952604323" Name="Space_Dreaming (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="1029588481" Name="Parametric EQ (Custom)" LibName="Wwise Parametric EQ" LibId="6881283"/>
 				</Custom>
-				<ShareSets>
-					<Plugin Id="415841907" Name="Space_Garage" LibName="Wwise RoomVerb" LibId="7733251"/>
-				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
@@ -33,22 +31,20 @@
 				<Bus Id="1537061107" Name="Wind">
 					<PluginRefs>
 						<Custom>
+							<PluginRef Id="33408217"/>
 							<PluginRef Id="59998620"/>
 							<PluginRef Id="287204507"/>
 							<PluginRef Id="952604323"/>
 							<PluginRef Id="1029588481"/>
 						</Custom>
-						<ShareSets>
-							<PluginRef Id="415841907"/>
-						</ShareSets>
 					</PluginRefs>
 				</Bus>
 				<Bus Id="2609808943" Name="World"/>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 			<GameParameters>
+				<GameParameter Id="1042517418" Name="WindIntensity"/>
 				<GameParameter Id="1820302072" Name="Panning"/>
-				<GameParameter Id="3571474009" Name="WindFreq"/>
 				<GameParameter Id="4079084883" Name="Dummy"/>
 			</GameParameters>
 			<AcousticTextures>
@@ -180,7 +176,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="2858921253" Type="User" Language="SFX" Hash="{24E05676-46A2-803B-6B0B-AB504234F381}">
+		<SoundBank Id="2858921253" Type="User" Language="SFX" Hash="{826C76A0-4A8B-F221-84AF-53F3C358CE3B}">
 			<ShortName>Allinone</ShortName>
 			<Path>2858921253.bnk</Path>
 			<Media>
@@ -217,6 +213,16 @@
 					<CachePath>SFX/Strum1Mono_818F3B66.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="40290382" Name="Synth One" LibName="Wwise Synth One" LibId="9699330"/>
+					<Plugin Id="287900309" Name="Synth One" LibName="Wwise Synth One" LibId="9699330"/>
+				</Custom>
+				<ShareSets>
+					<Plugin Id="2376980951" Name="High_Pass_230hz" LibName="Wwise Parametric EQ" LibId="6881283"/>
+					<Plugin Id="2667647788" Name="Single_Band_1Khz_Wide" LibName="Wwise Parametric EQ" LibId="6881283"/>
+				</ShareSets>
+			</Plugins>
 			<Events>
 				<Event Id="889841071" Name="FilterSweepLoop">
 					<MediaRefs>
@@ -242,11 +248,23 @@
 						<MediaRef Id="971092194"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1537061107" Name="Wind">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="40290382"/>
+							<PluginRef Id="287900309"/>
+						</Custom>
+						<ShareSets>
+							<PluginRef Id="2376980951"/>
+							<PluginRef Id="2667647788"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
 			</Events>
 			<GameParameters>
 				<GameParameter Id="1820302072" Name="Panning"/>
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{69ECF3AF-E0BD-408A-74B5-0BB6CBC78DF9}</FileHash>
+	<FileHash>{E4036AED-DAEE-00C1-38B3-1A21257AE71E}</FileHash>
 </SoundBanksInfo>

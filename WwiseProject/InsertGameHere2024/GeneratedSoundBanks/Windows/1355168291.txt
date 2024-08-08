@@ -2,6 +2,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	504532776	Brick			\Factory Acoustic Textures\Textures\Brick	
 	513139656	Mountain			\Factory Acoustic Textures\Textures\Mountain	
 	841620460	Concrete			\Factory Acoustic Textures\Textures\Concrete	
+	1042517418	WindIntensity			\Default Work Unit\WindIntensity	
 	1755085759	Wood_Deep			\Factory Acoustic Textures\Textures\Wood_Deep	
 	1873957695	Anechoic			\Factory Acoustic Textures\Textures\Anechoic	
 	1970351858	Fabric			\Factory Acoustic Textures\Textures\Fabric	
@@ -22,9 +23,9 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Effect plug-ins	ID	Name	Type				Notes
+	33408217	Parametric EQ (Custom)	Wwise Parametric EQ			
 	59998620	Meter (Custom)	Wwise Meter			
 	287204507	Compressor (Custom)	Wwise Compressor			
-	415841907	Space_Garage	Wwise RoomVerb			
 	952604323	Space_Dreaming (Custom)	Wwise RoomVerb			
 	1029588481	Parametric EQ (Custom)	Wwise Parametric EQ			
 

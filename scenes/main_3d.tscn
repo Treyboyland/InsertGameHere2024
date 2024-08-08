@@ -931,8 +931,8 @@ transform = Transform3D(1.15, 0, 0, 0, 1.15, 0, 0, 0, 1.15, 0, 1.15, 0)
 
 [node name="SoundEmitter" type="AkEvent3D" parent="."]
 event = {
-"id": 889841071,
-"name": "FilterSweepLoop"
+"id": 1847609664,
+"name": "PlaceHolderBeep"
 }
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -643.549, 1.10798, -456.057)
 script = ExtResource("2_wghep")
@@ -1024,3 +1024,10 @@ modulate = Color(0.490196, 0.403922, 0.45098, 1)
 shaded = true
 double_sided = false
 texture = ExtResource("4_gasq1")
+
+[node name="Wind" type="AkEvent2D" parent="."]
+event = {
+"id": 1537061107,
+"name": "Wind"
+}
+trigger_on = 1
