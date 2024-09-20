@@ -18,7 +18,7 @@ shadow_enabled = true
 [node name="WorldEnvironment" parent="." instance=ExtResource("1_8mml7")]
 
 [node name="player" parent="." instance=ExtResource("2_xje54")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.431713, 0.001, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.431713, 0.000121513, 0)
 velocity = Vector3(0, 0, 0)
 user_controlled = true
 

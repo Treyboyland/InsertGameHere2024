@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cd417q0757gie"]
 
-[ext_resource type="Script" path="res://Player/Player.gd" id="1_3qj8j"]
+[ext_resource type="Script" path="res://Player/player.gd" id="1_3qj8j"]
 [ext_resource type="PackedScene" uid="uid://cq2tmiy2nv4oo" path="res://Player/spark_radius.tscn" id="2_0yyjt"]
 
 [node name="player" type="CharacterBody3D" groups=["Player"]]

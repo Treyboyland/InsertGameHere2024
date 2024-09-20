@@ -1,7 +1,7 @@
 [gd_scene load_steps=16 format=3 uid="uid://ciqdbjt4u1lq2"]
 
 [ext_resource type="Script" path="res://scenes/main_3d.gd" id="1_i23ro"]
-[ext_resource type="Script" path="res://Player/Player.gd" id="1_nhb0t"]
+[ext_resource type="Script" path="res://Player/player.gd" id="1_nhb0t"]
 [ext_resource type="PackedScene" uid="uid://ljsnx8ikks2d" path="res://scenes/world_environment.tscn" id="2_uuc43"]
 [ext_resource type="Script" path="res://scenes/testsound.gd" id="2_wghep"]
 [ext_resource type="Texture2D" uid="uid://bbx0x58wwq7f8" path="res://greeble-block.png" id="4_gasq1"]
